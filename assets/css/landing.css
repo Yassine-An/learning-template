@@ -28,22 +28,43 @@ header
     color:#fff;
     margin-right: 10px;
 }
+
 .button-gris
 {
     border:1px solid transparent ;
     border-radius: 20px;
     background-color: #8d949b;
 }
+.button-gris:hover
+{
+    background-color: transparent !important;
+    color:#8d949b !important;
+    border:1px solid #8d949b !important;
+}
 .link{
     text-decoration: none;
     display: inline-block;
     color: black;
-    padding: 8px;
+    padding: 8px 10px;
+    transition: all 0.3s ease;
 }
 .link:hover
 {
-    font-size: 18px;
-    color: #f8f1ec;
+   color:#F97316;
+   background-color: #f0f0f0;
+   border:1px solid #f97316;
+   transform: scale(1.05);
+
+}
+.head-link
+{
+    padding:0 !important;
+    margin: 10px !important;
+}
+.head-link:hover{
+    border:none !important;
+    color: #f97316 !important;
+    background-color: transparent !important;
 }
 main
 {
