@@ -1,0 +1,208 @@
+body
+{
+    width:100%;
+    padding: 0;
+    margin: 0;
+}
+
+
+header div h2,nav{
+    display: inline-block;
+    margin: 0px 8px;
+}
+header
+{
+    display:flex;
+    width:100%;
+    min-height: 15px;
+    padding: 15px 15px 15px 30px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid  #b1b5b9;
+}
+.button-orange
+{
+    border:1px solid transparent ;
+    border-radius: 20px;
+    background-color: #F97316;
+    color:#fff;
+    margin-right: 10px;
+}
+.button-gris
+{
+    border:1px solid transparent ;
+    border-radius: 20px;
+    background-color: #8d949b;
+}
+.link{
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+    padding: 8px;
+}
+.link:hover
+{
+    font-size: 18px;
+    color: #f8f1ec;
+}
+main
+{
+    width:100%;
+    min-height:250px;
+    padding:25px;
+}
+#chield1
+{
+    min-height:100px;
+    padding:10px;
+}
+#c1
+{
+    box-shadow: 1px 1px 2px 2px rgb(0, 0, 0,0.2); 
+    border:1px solid transparent;
+    border-radius: 10px;
+    margin: 5px 20px ;
+    padding:15px;
+    width:60%;
+}
+#chield1 img
+{
+    padding:0px;
+    border:1px solid black;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+}
+#info
+{
+    display:flex;
+    justify-content: space-between;
+    margin-top: 30px ;
+    width:100%;
+}
+#info p
+{
+    border:1px solid transparent;
+    border-radius: 25px;
+    padding:11px;
+    width:30%;
+    position: relative;
+    padding-left:35px;
+}
+.icon
+{
+    position: absolute;
+    left:10px ;
+    top:27px;
+}
+#chield2 , #chield3 , #chield4 , #chield5
+{
+    width:100%;
+    min-height: 250px;
+    padding:45px;
+}
+.Formations
+{
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-top: 30px;
+    width:100%;
+}
+.cards
+{
+    background-color: #fcf8f8;
+    border:1px solid transparent;
+    border-radius:10px;
+    box-shadow: 0 2px 2px 0 rgba(107, 104, 104, 0.4);
+    margin:0 15px;
+    width:32%;
+    padding:15px;
+}
+.formation-info
+{
+    display:flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+#chield3 div 
+{
+    display:flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+#chield3 div p
+{
+    border:1px solid transparent;
+    border-radius:10px;
+    background-color: #fffefd;
+    margin:15px 5px ;
+    padding:10px;
+    box-shadow: 1px 2px 2px 1px rgba(100, 100, 100,0.2 );
+    padding-left:50px;
+    font-size: 11px;
+    position:relative;
+    cursor: pointer;
+}
+.parcours-icons
+{
+    position:absolute;
+    top:25px ;
+    left :15px;
+    font-size: 18px ;
+}
+
+#chield4 div 
+{
+    display:flex;
+    justify-content: space-around;
+    margin-top: 25px;
+}
+.formateurs
+{
+    background-color:rgba(197, 197, 197, 0.1);
+    border:1px solid transparent;
+    border-radius:15px;
+    padding:10px;
+    text-align: center;
+
+}
+.formateurs img
+{
+    border-radius: 50%;
+}
+#chield5 div
+{
+    display:flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    width:100%;
+}
+.avis
+{
+    border:1px solid transparent;
+    border-radius:10px;
+    max-width:32%;
+    box-shadow: 1px 3px 3px 1px rgba(119, 119, 119, 0.1);
+    display:flex;
+    flex-flow: column ;
+    padding:10px;
+    font-size:12px;
+}
+#chield6
+{
+    display: flex;
+    flex-flow: row nowrap;
+    margin-top: 50px;
+    justify-content: space-between;
+    width:100%;
+}
+.info
+{
+    display:flex;
+    justify-content: space-between;
+    padding:10px;
+    width:23%;
+    box-shadow:1px 3px 3px 1px rgba(119, 119, 119, 0.1);
+}
