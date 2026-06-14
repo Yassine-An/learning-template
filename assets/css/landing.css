@@ -3,7 +3,7 @@ body
     width:100%;
     padding: 0;
     margin: 0;
-    font-size: 14px !important;
+    font-size: 1rem !important;
 }
 
 h1
@@ -265,6 +265,7 @@ main
 {
     display:flex;
     justify-content: space-between;
+    align-items: center !important;
     padding:10px;
     width:23%;
     border:1px solid transparent;
@@ -299,18 +300,23 @@ input[type=email]
 
 
 
-@media (width<=750px){
+@media (width<=1000px){
     body
     {
-        font-size: 2.5vw !important;
+        font-size: x-small !important;
     }
     h1{
-        font-size:5vw !important;
+        font-size:medium !important;
     }
     header
     {
+        flex-flow: column;
         width: 100%;
-        font-size: 2vh;
+        font-size:1rem;
+    }
+    header div
+    {
+        margin-bottom: 0.4rem;
     }
     header div h4,nav{
         margin: 0px 2vh;
@@ -323,6 +329,8 @@ input[type=email]
     .button-orange
     {
         margin-right: 1vw;
+        white-space: nowrap;
+
     }
     .link
     {
@@ -340,7 +348,10 @@ input[type=email]
     }
     #chield1
     {
+        display: flex;
+        flex-flow: row nowrap;
         min-height:10vh;
+        justify-content: space-between;
         padding:0.5vw;
     }
     #c1
@@ -348,11 +359,13 @@ input[type=email]
         margin: 0.5vh 1vw ;
         padding:1vh 0.03vw 1vh 1vw !important;
         max-height: 40vh;
+        width:50%;
+
     }
     #chield1 img
     {
         margin:1vw 0px;
-        width:30%;
+        width:45%;
     }
     #info
     {
@@ -392,48 +405,55 @@ input[type=email]
     {
         margin-top: 0.5vh;
     }
+    
     #chield3 div 
     {
         margin-top: 2vh;
+        flex-flow:row wrap ;
     }
     #chield3 div p
     {
         margin:1.5vh 0.05vw ;
         padding:0.5vw;
-        padding-left:2.2vw;
-        font-size: 1.1vh;
+        padding-left:4vw;
+        font-size: 1.4vh;
+        width:40%;
     }
     .parcours-icons
     {
-        top:2.5vh ;
+        top:3vh ;
         left :0.7vw;
         font-size: 1.8vh ;
     }
 
     #chield4 div 
     {
+        flex-flow: row wrap;
         margin-top: 2.2vw;
     }
     .formateurs
     {
         padding:0.5vw;
-        font-size: 0.7vw;
+        font-size: 1.7vw;
     }
     .formateurs img
     {
-        width:40%;
+        width:27%;
         max-height: 16vh;
         margin-bottom: 2vh;
     }
     #chield5 div
     {
         margin-top: 2.5vh;
+        flex-flow: row wrap;
     }
 
     .avis
     {
+        width:75%;
+        margin:auto;
         padding:0.5vw;
-        font-size:0.6vw;
+        font-size:1.7vw;
     }
     .avis div
     {
@@ -448,10 +468,14 @@ input[type=email]
     #chield6
     {
         margin-top: 5vh;
+        flex-flow: row wrap;
     }
     .info
     {
         padding:0.5vw;
+        width:45%;
+        font-size: 1.7vw;
+        padding-top: 2vh;
     }
 
     footer
