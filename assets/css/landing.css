@@ -3,10 +3,16 @@ body
     width:100%;
     padding: 0;
     margin: 0;
+    font-size: 14px !important;
 }
 
+h1
+{
+    /* color: #8d949b !important; */
+    font-size: 30px !important;
+ }
 
-header div h2,nav{
+header div h4,nav{
     display: inline-block;
     margin: 0px 8px;
 }
@@ -14,8 +20,8 @@ header
 {
     display:flex;
     width:100%;
-    min-height: 15px;
-    padding: 15px 15px 15px 30px;
+    max-height: 80px;
+    padding: 10px 20px 10px 40px;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid  #b1b5b9;
@@ -83,8 +89,9 @@ main
     border:1px solid transparent;
     border-radius: 10px;
     margin: 5px 20px ;
-    padding:15px;
+    padding:10px 3px 10px 20px !important;
     width:60%;
+    max-height: 400px;
 }
 #chield1 img
 {
@@ -92,7 +99,7 @@ main
     border:1px solid black;
     border-radius: 10px;
     margin-top: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 
 }
 #info
@@ -106,16 +113,17 @@ main
 {
     border:1px solid transparent;
     border-radius: 25px;
-    padding:11px;
-    width:30%;
+    padding:3px 2px 3px 10px;
+    width:29%;
     position: relative;
     padding-left:35px;
+    margin-top: 15px;
 }
 .icon
 {
     position: absolute;
     left:10px ;
-    top:27px;
+    top:17px;
 }
 #chield2 , #chield3 , #chield4 , #chield5
 {
@@ -140,6 +148,14 @@ main
     margin:0 15px;
     width:32%;
     padding:15px;
+}
+.cards img
+{
+    width:100%;
+    max-height: 200px;
+    margin-bottom:8px ;
+    border:1px solid transparent;
+    border-radius: inherit;
 }
 .formation-info
 {
@@ -177,21 +193,30 @@ main
 #chield4 div 
 {
     display:flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin-top: 25px;
 }
 .formateurs
 {
-    background-color:rgba(197, 197, 197, 0.1);
+    display: flex;
+    flex-flow: column;
+    align-items: center ;
+    justify-content: center;
+    background-color:rgba(238, 238, 238, 0.1);
     border:1px solid transparent;
-    border-radius:15px;
+    border-radius:20px;
     padding:10px;
     text-align: center;
+    font-size: 15px;
+    
 
 }
 .formateurs img
 {
+    width:40%;
+    max-height: 160px;
     border-radius: 50%;
+    margin-bottom: 20px;
 }
 #chield5 div
 {
@@ -200,6 +225,7 @@ main
     margin-top: 25px;
     width:100%;
 }
+
 .avis
 {
     border:1px solid transparent;
@@ -211,6 +237,22 @@ main
     padding:10px;
     font-size:12px;
 }
+.avis div
+{
+    display:flex;
+    justify-content: flex-start !important;
+    margin: 5px;
+
+    
+}
+.avis div img
+{
+    width:15%;
+    height: 60px;
+    margin-right: 15px;
+    border-radius: 50%;
+}
+
 #chield6
 {
     display: flex;
@@ -225,5 +267,207 @@ main
     justify-content: space-between;
     padding:10px;
     width:23%;
+    border:1px solid transparent;
+    border-radius:15px;
     box-shadow:1px 3px 3px 1px rgba(119, 119, 119, 0.1);
+}
+
+footer
+{
+    display:flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    padding: 20px 40px;
+    font-size: 12px;
+}
+input[type=email]
+{
+    border-radius: 20px;
+    border:1px solid rgb(104, 104, 104);
+    padding:2px 2px 2px 10px;
+}
+#reseaux
+{
+    display: flex;
+    justify-content: space-evenly;
+    word-spacing: 8px;
+}
+.btn
+{
+    border-radius: 20px !important;
+}
+
+
+
+@media (width<=750px){
+    body
+    {
+        font-size: 2.5vw !important;
+    }
+    h1{
+        font-size:5vw !important;
+    }
+    header
+    {
+        width: 100%;
+        font-size: 2vh;
+    }
+    header div h4,nav{
+        margin: 0px 2vh;
+    }
+    header
+    {
+        max-height: 20vh;
+        padding: 1vh 1vw 1vh 2vw;
+    }
+    .button-orange
+    {
+        margin-right: 1vw;
+    }
+    .link
+    {
+     
+        padding: 0.8vh 0.5vw;
+    }
+    .head-link
+    {
+        margin: 0.5vw !important;
+    }
+    main
+    {
+        min-height:25vh;
+        padding:2.5vw;
+    }
+    #chield1
+    {
+        min-height:10vh;
+        padding:0.5vw;
+    }
+    #c1
+    {
+        margin: 0.5vh 1vw ;
+        padding:1vh 0.03vw 1vh 1vw !important;
+        max-height: 40vh;
+    }
+    #chield1 img
+    {
+        margin:1vw 0px;
+        width:30%;
+    }
+    #info
+    {
+        margin-top: 1.5vw ;
+    }
+    #info p
+    {
+        padding:0.3vh 0.02vw 0.3vh 0.5vw;
+        padding-left:1.7vw;
+        margin-top: 1.5vh;
+    }
+    .icon
+    {
+        left:0.5vw ;
+        top:1.7vh;
+    }
+    #chield2 , #chield3 , #chield4 , #chield5
+    {
+        min-height: 25vh;
+        padding:2.25vw;
+    }
+    .Formations
+    {
+        margin-top: 3vh;
+    }
+    .cards
+    {
+        margin:0 0.7vw;
+        padding:0.7vw;
+    }
+    .cards img
+    {
+        max-height: 20vh;
+        margin-bottom:0.8vh ;
+    }
+    .formation-info
+    {
+        margin-top: 0.5vh;
+    }
+    #chield3 div 
+    {
+        margin-top: 2vh;
+    }
+    #chield3 div p
+    {
+        margin:1.5vh 0.05vw ;
+        padding:0.5vw;
+        padding-left:2.2vw;
+        font-size: 1.1vh;
+    }
+    .parcours-icons
+    {
+        top:2.5vh ;
+        left :0.7vw;
+        font-size: 1.8vh ;
+    }
+
+    #chield4 div 
+    {
+        margin-top: 2.2vw;
+    }
+    .formateurs
+    {
+        padding:0.5vw;
+        font-size: 0.7vw;
+    }
+    .formateurs img
+    {
+        width:40%;
+        max-height: 16vh;
+        margin-bottom: 2vh;
+    }
+    #chield5 div
+    {
+        margin-top: 2.5vh;
+    }
+
+    .avis
+    {
+        padding:0.5vw;
+        font-size:0.6vw;
+    }
+    .avis div
+    {
+        margin: 0.05vw;
+    }
+    .avis div img
+    {
+        height: 6vh;
+        margin-right: 0.75vw;
+    }
+
+    #chield6
+    {
+        margin-top: 5vh;
+    }
+    .info
+    {
+        padding:0.5vw;
+    }
+
+    footer
+    {
+        margin-top: 5vh;
+        padding: 2vh 2vw;
+        font-size: 0.6vw;
+    }
+    input[type=email]
+    {
+        padding:0.2vh 0.02vw 0.2vh 0.5vw;
+    }
+    #reseaux
+    {
+      
+        word-spacing: 0.08vw;
+    }
+ 
 }
