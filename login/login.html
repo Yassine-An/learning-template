@@ -15,7 +15,7 @@
 <body>
     <header>
         <h2 style="color: var(--border-top);"><i id="head-icon"  class="fa-solid fa-graduation-cap" ></i> <span style="color:#243d5c;"> Learn</span><span style="color: #ea6c0a;">Hub</span></h2>
-        <span id="login">Pas de compte ? <a id="sign" href="sign_in.html">S'inscrire gratuitement &#8594;</a></span>
+        <span id="login">Pas de compte ? <a id="sign" href="./sign_in.html">S'inscrire gratuitement &#8594;</a></span>
     </header>
     <main>
         <div id="form-container">
@@ -42,19 +42,19 @@
                 </div>
                 <input type="checkbox" name="connect" id="connect" >
                 <label id="connect" for="connect">Rester connecté pendant 30 jours</label><br>
-                <button type="submit" class="hvr-icon-forward">Continuer &#8594;</button>
+                <button type="submit" class="hvr-icon-forward" onclick="window.location.href='./../dashbord/dashbord-home.html';" >Continuer &#8594;</button>
                 </form>
             </div>
         </div>
         <footer>        
-            <span id="no-account">Vous n'avez pas de compte ? <a id="sign-in" href="sign_in.html">Créer-en un gratuitement </a></span>
+            <span id="no-account">Vous n'avez pas de compte ? <a id="sign-in" href="./sign_in.html">Créer-en un gratuitement </a></span>
             <div id="under">
                 <p style="color: var(--footer-text-color);" class="fin"><i style="color: var(--success-state); margin: 1px 5px 1px 2px;" class="fa-solid fa-book-open" ></i><strong>324 Formations</strong></p>
                 <p style="color: var(--footer-text-color);" class="fin"><i style="color: var(--otp-text-color); margin: 1px 5px 1px 2px;" class="fa-solid fa-chalkboard-user" ></i><strong>84 Formateurs</strong> </p>
                 <p style="color: var(--footer-text-color);" class="fin"><i style="color: var(--text-little-dark); margin: 1px 5px 1px 2px;" class="fa-solid fa-award"></i><strong>12,540 Certificats</strong></p>
             </div>
+        </footer>
     </main>
-          
-     
 </body>
+
 </html>
