@@ -1,278 +1,316 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="YSN">
-    <meta name="keywords" content="learn,courses,python,web,full-stack">
-    <meta name="description" content="best place where u can learn">
-    <title>LearnHub</title>
-    <link rel="stylesheet" href="./../assets/css/dashbord-home.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
-    <script src="./../assets/js/home.js" defer></script>
-</head>
-<body>
-<aside class="sidebar">
-  <div class="sb-logo">
-    <div class="sb-logo-text">Learn<span>Hub</span></div>
-    <div class="under-sb-logo">Administration</div>
-  </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>LearnHub</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+        <link rel="stylesheet" href="./../assets/css/dashbord.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"/>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" defer></script>
+    </head>
+    <body >
+    
+            <aside class="sidebar">
+                <div class="sb-top">
+                    <p class="sb-title">Learn<span style="color: #f97316;">Hub</span></p>
+                    <p class="sb-utitle">Administration</p>
+                </div>
+                <div class="sb-section">principal</div>
+                    <a class="sb-link active"><i class="fa-solid fa-gauge-high"></i><span class="hidden">Dashboard</span> </a>
+                    <a class="sb-link"><i class="fa-solid fa-book-open"></i><span class="hidden">Cours</span><span class="sb-stats hidden">48</span></a>
+                    <a class="sb-link"><i class="fa-solid fa-chalkboard-user"></i><span class="hidden">Formateurs</span> </a>
+                    <a class="sb-link"><i class="fa-solid fa-users"></i><span class="hidden">Étudiants</span> </a>
+                <div class="sb-section">contenu</div>
+                    <a class="sb-link"><i class="fa-solid fa-folder-open"></i><span class="hidden">Catégories</span></a>
+                    <a class="sb-link"><i class="fa-solid fa-certificate"></i><span class="hidden">Certificats</span>  <span class="sb-stats hidden">3</span></a>
+                <div class="sb-section">systéme</div>
+                    <a class="sb-link"><i class="fa-solid fa-gear"></i><span class="hidden">Paramètres</span> </a>
+                <div class="sb-under">
+                    <div class="sb-user">
+                        <div class="sb-avatar">YS</div>
+                        <div>
+                            <p class="uname hidden">Admin</p>
+                            <p class="urole hidden">High Admin</p>
+                        </div>
+                        <i class="fa-solid fa-ellipsis-vertical" style="margin-left:auto;color:rgba(255,255,255,0.3);font-size:13px"></i>
+                    </div>
+                </div>
+            </aside>
+            <main >
+                <header>
+                    <div class="hidden">
+                        <p id="title">Tableau de bord</p>
+                        <span id="path"><i class="fa-solid fa-house" style="font-size:10px"></i> Accueil / Dashboard</span>
+                    </div>
+                    <div id="container">
+                        <div id="search" class="hidden">
+                            <i class="fa-solid fa-search"></i>
+                            <input type="text" placeholder="Rechercher...">
+                        </div>
+                        <div id="icons">
+                            <span class="icon"><i class="fa-regular fa-bell"></i></span>
+                            <span class="icon"><i class="fa-regular fa-envelope"></i></span>
+                            <span class="icon"><i class="fa-solid fa-gear"></i></span>
+                        </div>
+                        <div style="display: flex;">
+                            <div id="avatar" class="hidden" >YS</div>
+                            <div id="date"><i class="fa-regular fa-calendar"></i> 09 Juin 2025</div>
+                        </div>
+                    </div>
+                </header>
+                <div id="main-header">
+                    <div>
+                        <h2>Bienvenue, Admin 👋</h2>
+                        <p id="under-head">Voici un aperçu de l'activité de votre plateforme aujourd'hui</p>
+                    </div>
+                    <div style="display:flex;">
+                        <button id="btn-one"><i style="margin-right: 8px;" class="fa-solid fa-download"></i> Rapport</button>
+                        <button id="btn-two"><i style="margin-right: 8px;" class="fa-solid fa-plus"></i> Nouveau cours</button>
+                    </div>
+                </div>
+                <div class="" id="stat-cards">
+                    <div class="stat-card">
+                        <div class="stat-icon blue"><i class="fa-solid fa-book-open"></i></div>
+                        <div style="width: 100%;">
+                            <p class="stat-header">Total Cours</p>
+                            <p class="stat-num">1 248</p>
+                            <span class="stat-flesh"><i style="margin-right:5px ;" class="fa-solid fa-arrow-trend-up"></i> +12% ce mois</span>
+                            <div class="progression"><div class="prog-bar" style="width:72%;background:#185fa5"></div></div>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon green"><i class="fa-solid fa-users"></i></div>
+                        <div style="width: 100%;">
+                            <p class="stat-header">Étudiants actifs</p>
+                            <p class="stat-num">48 320</p>
+                            <span class="stat-flesh"><i style="margin-right:5px ;" class="fa-solid fa-arrow-trend-up"></i> +8% ce mois</span>
+                            <div class="progression"><div class="prog-bar" style="width:85%;background:#3b6d11"></div></div>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon brown"><i class="fa-solid fa-chalkboard-user"></i></div>
+                        <div style="width: 100%;">
+                            <p class="stat-header">Formateurs</p>
+                            <p class="stat-num">625</p>
+                            <span class="stat-flesh"><i style="margin-right:5px ;" class="fa-solid fa-arrow-trend-up"></i> +10 nouveux</span>
+                            <div class="progression"><div class="prog-bar" style="width:60%;background:#854f0b"></div></div>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                            <div class="stat-icon purple"><i class="fa-solid fa-certificate"></i></div>
+                            <div style="width: 100%;">
+                                <p class="stat-header">Certificats délivrés</p>
+                                <p class="stat-num">92 180</p>
+                                <span class="stat-flesh"><i style="margin-right:5px ;" class="fa-solid fa-arrow-trend-up"></i> +340 cette semaine</span>
+                                <div class="progression"><div class="prog-bar" style="width:91%;background:#534ab7"></div></div>
+                            </div>
+                    </div>
+                </div>
+                <div id="chart-container">
+                    <div id="chart">
+                        <div id="chart-header">
+                            <div>
+                                <h3>Inscriptions & Certifications</h3>
+                                <p id="chart-desc">Évolution mensuelle — Janvier à Juin 2025</p>
+                            </div>
+                            <div id="squares">
+                                <div class="square"><div class="square-colored" style="background:#f97316;margin-right: 6px;"></div> Inscriptions</div>
+                                <div class="square"><div class="square-colored" style="background:#185fa5;margin-right: 6px;"></div> Certifications</div>
+                            </div>
+                        </div>
+                        <canvas id="mainChart" ></canvas>
+                    </div>
+                    <div id="quick-actions">
+                        <div id="actions-head">
+                            <h3 id="actions-title">Actions rapides</h3>
+                        </div>
+                        <a style="margin-right: 8px;" href="#" class="action-btn"><i style="color: #185fa5; " class="fa-solid fa-plus"></i> Ajouter cours</a>
+                        <a href="#" class="action-btn"><i style="color: #3b6d11;" class="fa-solid fa-user-plus"></i> Étudiant</a>
+                        <a style="margin-right: 8px;" href="#" class="action-btn"><i style="color: #854f0b;" class="fa-solid fa-certificate"></i> Certificat</a>
+                        <a href="#" class="action-btn"><i style="color: #534ab7;" class="fa-solid fa-chart-pie"></i> Rapport</a>
+                        <a style="margin-right: 8px;" href="#" class="action-btn"><i style="color: #993556;" class="fa-solid fa-bell"></i> Notification</a>
+                        <a href="#" class="action-btn"><i style="color: #0f6e56;" class="fa-solid fa-file-export"></i> Exporter</a>
+                    </div>
+                </div>
+                <div id="table-div">
+                    <div id="table-header">
+                        <h3 id="table-title"><i class="fa-solid fa-book-open"></i> Cours récents</h3>
+                        <div id="table-controls">
+                            <input type="text" id="searchcourses" placeholder="Rechercher cours...">
+                            <span id="filter-icon"><i class="fa-solid fa-filter"></i></span>
+                            <select id="filter" class="hidden">
+                                <option value="">Toutes catégories</option>
+                                <option>Développement</option>
+                                <option>Data Science</option>
+                                <option>Design</option>
+                                <option>Marketing</option>
+                                <option>Cybersécurité</option>
+                            </select>
+                            <button id="btn-export"><i class="fa-solid fa-download"></i> Exporter</button>
+                            <button id="btn-add"><i class="fa-solid fa-plus"></i> Ajouter cours</button>
+                        </div>
+                    </div>
+                    <div class="table-responsive">
+                    <table id="coursesTable" class="table" >
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Cours</th>
+                                <th>Formateur</th>
+                                <th>Catégorie</th>
+                                <th>Niveau</th>
+                                <th>Durée</th>
+                                <th>Actions</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>#001</td>
+                            <td>React & Next.js — De Zéro à Expert</td>
+                            <td>A. Alaoui</td>
+                            <td>Développement</td>
+                            <td>Intermédiaire</td>
+                            <td>42h</td>
+                            <td>
+                                <a href="#" class="btn-edit"><i class="fa-solid fa-pen"></i></a>
+                                <a href="#" class="btn-del"><i class="fa-solid fa-trash"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#002</td>
+                            <td>Python & Machine Learning Complet</td>
+                            <td>S. Benali</td>
+                            <td>Data Science</td>
+                            <td>Avancé</td>
+                            <td>58h</td>
+                            <td>
+                                <a href="#" class="btn-edit"><i class="fa-solid fa-pen"></i></a>
+                                <a href="#" class="btn-del"><i class="fa-solid fa-trash"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#003</td>
+                            <td>UI/UX Design avec Figma 2025</td>
+                            <td>K. Mansouri</td>
+                            <td>Design</td>
+                            <td>Débutant</td>
+                            <td>35h</td>
+                            <td>
+                                <a href="#" class="btn-edit"><i class="fa-solid fa-pen"></i></a>
+                                <a href="#" class="btn-del"><i class="fa-solid fa-trash"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#004</td>
+                            <td>Marketing Digital & SEO Avancé</td>
+                            <td>L. Ouhabi</td>
+                            <td>Marketing</td>
+                            <td>Intermédiaire</td>
+                            <td>28h</td>
+                            <td>
+                                <a href="#" class="btn-edit"><i class="fa-solid fa-pen"></i></a>
+                                <a href="#" class="btn-del"><i class="fa-solid fa-trash"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#005</td>
+                            <td>Ethical Hacking & Sécurité Réseau</td>
+                            <td>M. Filali</td>
+                            <td>Cybersécurité</td>
+                            <td>Avancé</td>
+                            <td>64h</td>
+                            <td>
+                                <a href="#" class="btn-edit"><i class="fa-solid fa-pen"></i></a>
+                                <a href="#" class="btn-del"><i class="fa-solid fa-trash"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#006</td>
+                            <td>Node.js & API REST Avancées</td>
+                            <td>A. Alaoui</td>
+                            <td>Développement</td>
+                            <td>Avancé</td>
+                            <td>38h</td>
+                            <td>
+                                <a href="#" class="btn-edit"><i class="fa-solid fa-pen"></i></a>
+                                <a href="#" class="btn-del"><i class="fa-solid fa-trash"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#007</td>
+                            <td>SQL & NoSQL — Bases de données</td>
+                            <td>S. Benali</td>
+                            <td>Data Science</td>
+                            <td>Intermédiaire</td>
+                            <td>32h</td>
+                            <td>
+                                <a href="#" class="btn-edit"><i class="fa-solid fa-pen"></i></a>
+                                <a href="#" class="btn-del"><i class="fa-solid fa-trash"></i></a>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <script>
+            $(function(){
+            const table = $('#coursesTable').DataTable({ pageLength:6, lengthChange:false, searching:true, ordering:true, info:false });
+            $('#searchcourses').on('keyup', function(){ table.search(this.value).draw(); });
+            $('#filter').on('change', function(){
+                const v = this.value;
+                table.column(3).search(v).draw();
+            });
 
-  <div class="sb-section">Principal</div>
-  <a class="sb-link active"><i class="fa-solid fa-gauge-high"></i> Dashboard</a>
-  <a class="sb-link"><i class="fa-solid fa-book-open"></i> Cours <span class="sb-badge">48</span></a>
-  <a class="sb-link"><i class="fa-solid fa-chalkboard-user"></i> Formateurs</a>
-  <a class="sb-link"><i class="fa-solid fa-users"></i> Étudiants</a>
-
-  <div class="sb-section">Contenu</div>
-  <a class="sb-link"><i class="fa-solid fa-folder-open"></i> Catégories</a>
-  <a class="sb-link"><i class="fa-solid fa-certificate"></i> Certificats <span class="sb-badge">3</span></a>
-
-  <div class="sb-section">Système</div>
-  <a class="sb-link"><i class="fa-solid fa-gear"></i> Paramètres</a>
-
-  <div class="sb-bottom">
-    <div class="sb-user">
-      <div class="sb-avatar">AD</div>
-      <div>
-        <div class="sb-uname">Admin</div>
-        <div class="sb-urole">Super Admin</div>
-      </div>
-      <i class="fa-solid fa-ellipsis-vertical" style="margin-left:auto;color:rgba(255,255,255,0.3);font-size:13px"></i>
-    </div>
-  </div>
-</aside>
-<div class="main">
-    <header class="topbar">
-        <div class="tb-left">
-          <div class="tb-title">Tableau de bord</div>
-          <div class="tb-path"><i class="fa-solid fa-house" style="font-size:10px"></i> Accueil / Dashboard</div>
-        </div>
-        <div class="tb-search">
-          <i class="fa-solid fa-search"></i>
-          <input type="text" placeholder="Rechercher...">
-        </div>
-        <div class="tb-icons">
-          <div class="tb-icon"><i class="fa-regular fa-bell"></i><span class="notif"></span></div>
-          <div class="tb-icon"><i class="fa-regular fa-envelope"></i></div>
-          <div class="tb-divider"></div>
-          <div class="tb-icon"><i class="fa-solid fa-gear"></i></div>
-          <div class="tb-avatar-btn">AD</div>
-        </div>
-        <div class="tb-date"><i class="fa-regular fa-calendar"></i> 09 Juin 2025</div>
-    </header>
-  <div class="content">
-    <div class="page-header">
-      <div>
-        <div class="page-title">Bienvenue, Admin 👋</div>
-        <div class="page-sub">Voici un aperçu de l'activité de votre plateforme aujourd'hui</div>
-      </div>
-      <div style="display:flex;gap:8px">
-        <button class="btn-outline"><i class="fa-solid fa-download"></i> Rapport</button>
-        <button class="btn-primary"><i class="fa-solid fa-plus"></i> Nouveau cours</button>
-      </div>
-    </div>
-    <section class="stat-container">
-        <div class="stat-card">
-            <div class="stat-icon si-blue"><i class="fa-solid fa-book-open"></i></div>
-            <div style="flex:1">
-                <div class="stat-lbl">Total Cours</div>
-                <div class="stat-num">1 248</div>
-                <div class="stat-trend trend-up"><i class="fa-solid fa-arrow-trend-up"></i> +12% ce mois</div>
-                <div class="stat-bar"><div class="stat-bar-fill" style="width:72%;background:#185fa5"></div></div>
-            </div>
-        </div>
-        
-        <div class="stat-card">
-            <div class="stat-icon si-green"><i class="fa-solid fa-users"></i></div>
-            <div style="flex:1">
-                <div class="stat-lbl">Étudiants actifs</div>
-                <div class="stat-num">48 320</div>
-                <div class="stat-trend trend-up"><i class="fa-solid fa-arrow-trend-up"></i> +8% ce mois</div>
-                <div class="stat-bar"><div class="stat-bar-fill" style="width:85%;background:#3b6d11"></div></div>
-            </div>
-        </div>
-
-        <div class="stat-card">
-            <div class="stat-icon si-amber"><i class="fa-solid fa-chalkboard-user"></i></div>
-            <div style="flex:1">
-                <div class="stat-lbl">Formateurs</div>
-                <div class="stat-num">324</div>
-                <div class="stat-trend trend-up"><i class="fa-solid fa-arrow-trend-up"></i> +5 nouveaux</div>
-                <div class="stat-bar"><div class="stat-bar-fill" style="width:54%;background:#854f0b"></div></div>
-            </div>
-        </div>
-
-        <div class="stat-card">
-            <div class="stat-icon si-purple"><i class="fa-solid fa-certificate"></i></div>
-            <div style="flex:1">
-                <div class="stat-lbl">Certificats délivrés</div>
-                <div class="stat-num">92 180</div>
-                <div class="stat-trend trend-up"><i class="fa-solid fa-arrow-trend-up"></i> +340 cette semaine</div>
-                <div class="stat-bar"><div class="stat-bar-fill" style="width:91%;background:#534ab7"></div></div>
-            </div>
-        </div>
-    </section>
-    <div class="mid-row">
-      <div class="card">
-        <div class="card-header">
-          <div>
-            <div class="card-title">Inscriptions & Certifications</div>
-            <div class="card-sub">Évolution mensuelle — Janvier à Juin 2025</div>
-          </div>
-          <div class="legend">
-            <div class="leg-item"><div class="leg-dot" style="background:#f97316"></div> Inscriptions</div>
-            <div class="leg-item"><div class="leg-dot" style="background:#185fa5"></div> Certifications</div>
-          </div>
-        </div>
-        <canvas id="mainChart" height="88"></canvas>
-      </div>
-      <div class="card">
-        <div class="card-header">
-          <div class="card-title">Actions rapides</div>
-        </div>
-        <div class="qa-grid">
-          <div class="qa-btn">
-            <div class="qa-icon" style="background:#e6f1fb;color:#185fa5"><i class="fa-solid fa-plus"></i></div>
-            <div><div class="qa-label">Ajouter cours</div><div class="qa-desc">Nouveau contenu</div></div>
-          </div>
-          <div class="qa-btn">
-            <div class="qa-icon" style="background:#eaf3de;color:#3b6d11"><i class="fa-solid fa-user-plus"></i></div>
-            <div><div class="qa-label">Étudiant</div><div class="qa-desc">Inscription</div></div>
-          </div>
-          <div class="qa-btn">
-            <div class="qa-icon" style="background:#faeeda;color:#854f0b"><i class="fa-solid fa-certificate"></i></div>
-            <div><div class="qa-label">Certificat</div><div class="qa-desc">Émettre</div></div>
-          </div>
-          <div class="qa-btn">
-            <div class="qa-icon" style="background:#eeedfe;color:#534ab7"><i class="fa-solid fa-chart-pie"></i></div>
-            <div><div class="qa-label">Rapport</div><div class="qa-desc">Statistiques</div></div>
-          </div>
-          <div class="qa-btn">
-            <div class="qa-icon" style="background:#fbeaf0;color:#993556"><i class="fa-solid fa-bell"></i></div>
-            <div><div class="qa-label">Notification</div><div class="qa-desc">Alertes</div></div>
-          </div>
-          <div class="qa-btn">
-            <div class="qa-icon" style="background:#e1f5ee;color:#0f6e56"><i class="fa-solid fa-file-export"></i></div>
-            <div><div class="qa-label">Exporter</div><div class="qa-desc">Données CSV</div></div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="section-label"><span>Cours récents</span></div>
-    <div class="table-section">
-      <div class="table-header">
-        <div class="card-title" style="display:flex;align-items:center;gap:8px">
-          <i class="fa-solid fa-book-open" style="color:var(--orange)"></i> Gestion des cours
-        </div>
-        <div class="tbl-controls">
-          <input class="tbl-input" type="text" id="searchCourse" placeholder="Rechercher cours...">
-          <select class="tbl-select" id="filterCat">
-            <option value="">Toutes catégories</option>
-            <option>Développement</option>
-            <option>Data Science</option>
-            <option>Design</option>
-            <option>Marketing</option>
-            <option>Cybersécurité</option>
-            <option>Cloud</option>
-          </select>
-          <button class="btn-outline"><i class="fa-solid fa-download"></i> Exporter</button>
-          <button class="btn-primary"><i class="fa-solid fa-plus"></i> Ajouter cours</button>
-        </div>
-      </div>
-      <table class="dt" id="coursesTable">
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>Cours</th>
-            <th>Formateur</th>
-            <th>Catégorie</th>
-            <th>Niveau</th>
-            <th>Durée</th>
-            <th>Actions</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><span style="font-size:11px;color:var(--text-light);font-weight:600">#001</span></td>
-            <td><div class="course-name-cell"><div class="course-thumb" style="background:#e6f1fb;color:#185fa5"><i class="fa-brands fa-react"></i></div><div><div style="font-weight:600">React & Next.js — De Zéro à Expert</div><div style="font-size:11px;color:var(--text-light)">⭐ 4.9 · 2 341 avis</div></div></div></td>
-            <td><div style="display:flex;align-items:center;gap:6px"><div style="width:26px;height:26px;border-radius:50%;background:#0f4c81;color:#fff;font-size:10px;font-weight:700;display:flex;align-items:center;justify-content:center">AA</div> A. Alaoui</div></td>
-            <td><span class="badge b-dev"><i class="fa-solid fa-code" style="font-size:9px;margin-right:3px"></i>Développement</span></td>
-            <td><span class="badge lvl-int">Intermédiaire</span></td>
-            <td><span style="display:flex;align-items:center;gap:4px;color:var(--text-muted)"><i class="fa-regular fa-clock" style="font-size:11px"></i>42h</span></td>
-            <td><div class="action-btns"><button class="action-btn edit"><i class="fa-solid fa-pen"></i></button><button class="action-btn del"><i class="fa-solid fa-trash"></i></button></div></td>
-          </tr>
-          <tr>
-            <td><span style="font-size:11px;color:var(--text-light);font-weight:600">#002</span></td>
-            <td><div class="course-name-cell"><div class="course-thumb" style="background:#faeeda;color:#854f0b"><i class="fa-brands fa-python"></i></div><div><div style="font-weight:600">Python & Machine Learning Complet</div><div style="font-size:11px;color:var(--text-light)">⭐ 4.8 · 3 120 avis</div></div></div></td>
-            <td><div style="display:flex;align-items:center;gap:6px"><div style="width:26px;height:26px;border-radius:50%;background:#9d174d;color:#fff;font-size:10px;font-weight:700;display:flex;align-items:center;justify-content:center">SB</div> S. Benali</div></td>
-            <td><span class="badge b-data"><i class="fa-solid fa-chart-simple" style="font-size:9px;margin-right:3px"></i>Data Science</span></td>
-            <td><span class="badge lvl-adv">Avancé</span></td>
-            <td><span style="display:flex;align-items:center;gap:4px;color:var(--text-muted)"><i class="fa-regular fa-clock" style="font-size:11px"></i>58h</span></td>
-            <td><div class="action-btns"><button class="action-btn edit"><i class="fa-solid fa-pen"></i></button><button class="action-btn del"><i class="fa-solid fa-trash"></i></button></div></td>
-          </tr>
-          <tr>
-            <td><span style="font-size:11px;color:var(--text-light);font-weight:600">#003</span></td>
-            <td><div class="course-name-cell"><div class="course-thumb" style="background:#eaf3de;color:#3b6d11"><i class="fa-solid fa-pen-ruler"></i></div><div><div style="font-weight:600">UI/UX Design avec Figma 2025</div><div style="font-size:11px;color:var(--text-light)">⭐ 4.9 · 1 875 avis</div></div></div></td>
-            <td><div style="display:flex;align-items:center;gap:6px"><div style="width:26px;height:26px;border-radius:50%;background:#065f46;color:#fff;font-size:10px;font-weight:700;display:flex;align-items:center;justify-content:center">KM</div> K. Mansouri</div></td>
-            <td><span class="badge b-design"><i class="fa-solid fa-palette" style="font-size:9px;margin-right:3px"></i>Design</span></td>
-            <td><span class="badge lvl-deb">Débutant</span></td>
-            <td><span style="display:flex;align-items:center;gap:4px;color:var(--text-muted)"><i class="fa-regular fa-clock" style="font-size:11px"></i>35h</span></td>
-            <td><div class="action-btns"><button class="action-btn edit"><i class="fa-solid fa-pen"></i></button><button class="action-btn del"><i class="fa-solid fa-trash"></i></button></div></td>
-          </tr>
-          <tr>
-            <td><span style="font-size:11px;color:var(--text-light);font-weight:600">#004</span></td>
-            <td><div class="course-name-cell"><div class="course-thumb" style="background:#fbeaf0;color:#993556"><i class="fa-solid fa-bullhorn"></i></div><div><div style="font-weight:600">Marketing Digital & SEO Avancé</div><div style="font-size:11px;color:var(--text-light)">⭐ 4.7 · 2 056 avis</div></div></div></td>
-            <td><div style="display:flex;align-items:center;gap:6px"><div style="width:26px;height:26px;border-radius:50%;background:#7c2d12;color:#fff;font-size:10px;font-weight:700;display:flex;align-items:center;justify-content:center">LO</div> L. Ouhabi</div></td>
-            <td><span class="badge b-mkt"><i class="fa-solid fa-chart-line" style="font-size:9px;margin-right:3px"></i>Marketing</span></td>
-            <td><span class="badge lvl-int">Intermédiaire</span></td>
-            <td><span style="display:flex;align-items:center;gap:4px;color:var(--text-muted)"><i class="fa-regular fa-clock" style="font-size:11px"></i>28h</span></td>
-            <td><div class="action-btns"><button class="action-btn edit"><i class="fa-solid fa-pen"></i></button><button class="action-btn del"><i class="fa-solid fa-trash"></i></button></div></td>
-          </tr>
-          <tr>
-            <td><span style="font-size:11px;color:var(--text-light);font-weight:600">#005</span></td>
-            <td><div class="course-name-cell"><div class="course-thumb" style="background:#eeedfe;color:#534ab7"><i class="fa-solid fa-shield-halved"></i></div><div><div style="font-weight:600">Ethical Hacking & Sécurité Réseau</div><div style="font-size:11px;color:var(--text-light)">⭐ 4.8 · 1 643 avis</div></div></div></td>
-            <td><div style="display:flex;align-items:center;gap:6px"><div style="width:26px;height:26px;border-radius:50%;background:#3730a3;color:#fff;font-size:10px;font-weight:700;display:flex;align-items:center;justify-content:center">MF</div> M. Filali</div></td>
-            <td><span class="badge b-sec"><i class="fa-solid fa-lock" style="font-size:9px;margin-right:3px"></i>Cybersécurité</span></td>
-            <td><span class="badge lvl-adv">Avancé</span></td>
-            <td><span style="display:flex;align-items:center;gap:4px;color:var(--text-muted)"><i class="fa-regular fa-clock" style="font-size:11px"></i>64h</span></td>
-            <td><div class="action-btns"><button class="action-btn edit"><i class="fa-solid fa-pen"></i></button><button class="action-btn del"><i class="fa-solid fa-trash"></i></button></div></td>
-          </tr>
-          <tr>
-            <td><span style="font-size:11px;color:var(--text-light);font-weight:600">#006</span></td>
-            <td><div class="course-name-cell"><div class="course-thumb" style="background:#e1f5ee;color:#0f6e56"><i class="fa-brands fa-aws"></i></div><div><div style="font-weight:600">AWS Cloud Practitioner Certifié</div><div style="font-size:11px;color:var(--text-light)">⭐ 4.9 · 2 890 avis</div></div></div></td>
-            <td><div style="display:flex;align-items:center;gap:6px"><div style="width:26px;height:26px;border-radius:50%;background:#0f4c81;color:#fff;font-size:10px;font-weight:700;display:flex;align-items:center;justify-content:center">AA</div> A. Alaoui</div></td>
-            <td><span class="badge b-cloud"><i class="fa-solid fa-cloud" style="font-size:9px;margin-right:3px"></i>Cloud</span></td>
-            <td><span class="badge lvl-int">Intermédiaire</span></td>
-            <td><span style="display:flex;align-items:center;gap:4px;color:var(--text-muted)"><i class="fa-regular fa-clock" style="font-size:11px"></i>40h</span></td>
-            <td><div class="action-btns"><button class="action-btn edit"><i class="fa-solid fa-pen"></i></button><button class="action-btn del"><i class="fa-solid fa-trash"></i></button></div></td>
-          </tr>
-          <tr>
-            <td><span style="font-size:11px;color:var(--text-light);font-weight:600">#007</span></td>
-            <td><div class="course-name-cell"><div class="course-thumb" style="background:#e6f1fb;color:#185fa5"><i class="fa-brands fa-node-js"></i></div><div><div style="font-weight:600">Node.js & API REST Avancées</div><div style="font-size:11px;color:var(--text-light)">⭐ 4.7 · 1 220 avis</div></div></div></td>
-            <td><div style="display:flex;align-items:center;gap:6px"><div style="width:26px;height:26px;border-radius:50%;background:#0f4c81;color:#fff;font-size:10px;font-weight:700;display:flex;align-items:center;justify-content:center">AA</div> A. Alaoui</div></td>
-            <td><span class="badge b-dev"><i class="fa-solid fa-code" style="font-size:9px;margin-right:3px"></i>Développement</span></td>
-            <td><span class="badge lvl-adv">Avancé</span></td>
-            <td><span style="display:flex;align-items:center;gap:4px;color:var(--text-muted)"><i class="fa-regular fa-clock" style="font-size:11px"></i>38h</span></td>
-            <td><div class="action-btns"><button class="action-btn edit"><i class="fa-solid fa-pen"></i></button><button class="action-btn del"><i class="fa-solid fa-trash"></i></button></div></td>
-          </tr>
-          <tr>
-            <td><span style="font-size:11px;color:var(--text-light);font-weight:600">#008</span></td>
-            <td><div class="course-name-cell"><div class="course-thumb" style="background:#faeeda;color:#854f0b"><i class="fa-solid fa-database"></i></div><div><div style="font-weight:600">SQL & NoSQL — Bases de données</div><div style="font-size:11px;color:var(--text-light)">⭐ 4.6 · 980 avis</div></div></div></td>
-            <td><div style="display:flex;align-items:center;gap:6px"><div style="width:26px;height:26px;border-radius:50%;background:#9d174d;color:#fff;font-size:10px;font-weight:700;display:flex;align-items:center;justify-content:center">SB</div> S. Benali</div></td>
-            <td><span class="badge b-data"><i class="fa-solid fa-chart-simple" style="font-size:9px;margin-right:3px"></i>Data Science</span></td>
-            <td><span class="badge lvl-int">Intermédiaire</span></td>
-            <td><span style="display:flex;align-items:center;gap:4px;color:var(--text-muted)"><i class="fa-regular fa-clock" style="font-size:11px"></i>32h</span></td>
-            <td><div class="action-btns"><button class="action-btn edit"><i class="fa-solid fa-pen"></i></button><button class="action-btn del"><i class="fa-solid fa-trash"></i></button></div></td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-</div>
-</body>
+            const ctx = document.getElementById('mainChart').getContext('2d');
+            new Chart(ctx, {
+                type: 'bar',
+                data: {
+                labels: ['Janvier','Février','Mars','Avril','Mai','Juin'],
+                datasets: [
+                    {
+                    label: 'Inscriptions',
+                    data: [3200, 4100, 3800, 5200, 4700, 6300],
+                    backgroundColor: '#f97316',
+                    borderRadius: 5,
+                    barThickness: 15
+                    },
+                    {
+                    label: 'Certifications',
+                    data: [1800, 2400, 2100, 3100, 2900, 4100],
+                    backgroundColor: '#185fa5',
+                    borderRadius: 5,
+                    barThickness: 15
+                    }
+                ]
+                },
+                options: {
+                responsive: true,
+                maintainAspectRatio: true,
+                aspectRatio: 2, 
+                plugins: {
+                    legend: { display: false },
+                    tooltip: {
+                    backgroundColor: '#1e293b',
+                    titleColor: '#94a3b8',
+                    bodyColor: '#fff',
+                    padding: 10,
+                    cornerRadius: 6
+                    }
+                },
+                scales: {
+                    x: { grid: { display: false }, ticks: { color: '#94a3b8', font: { size: 12 } } },
+                    y: { grid: { color: '#f0f2f5' }, ticks: { color: '#94a3b8', font: { size: 11 } } }
+                }
+                }
+            });
+            });
+        </script>
+    </body>
 </html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnHub</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+    <link rel="stylesheet" href="./../assets/css/dashbord.css">
+</head>
+<body>
+    <aside class="sidebar">
+        <div class="sb-top">
+            <p class="sb-title">Learn<span style="color: #f97316;">Hub</span></p>
+            <p class="sb-utitle">Administration</p>
+        </div>
+        <div class="sb-section">principal</div>
+            <a class="sb-link"><i class="fa-solid fa-gauge-high "></i> <span class="hidden">Dashboard</span></a>
+            <a class="sb-link active"><i class="fa-solid fa-book-open"></i><span class="hidden">Cours</span>  <span class="sb-stats hidden">48</span></a>
+            <a class="sb-link"><i class="fa-solid fa-chalkboard-user"></i><span class="hidden">Formateurs</span></a>
+            <a class="sb-link"><i class="fa-solid fa-users"></i><span class="hidden">Étudiants</span></a>
+        <div class="sb-section">contenu</div>
+            <a class="sb-link"><i class="fa-solid fa-folder-open"></i><span class="hidden">Catégories</span> </a>
+            <a class="sb-link"><i class="fa-solid fa-certificate"></i><span class="hidden">Certificats</span> <span class="sb-stats hidden">3</span></a>
+        <div class="sb-section">systéme</div>
+            <a class="sb-link"><i class="fa-solid fa-gear"></i><span class="hidden">Paramètres</span> </a>
+        <div class="sb-under">
+            <div class="sb-user">
+                <div class="sb-avatar">YS</div>
+                <div>
+                    <p class="uname hidden">Admin</p>
+                    <p class="urole hidden">High Admin</p>
+                </div>
+                <i class="fa-solid fa-ellipsis-vertical" style="margin-left:auto;color:rgba(255,255,255,0.3);font-size:13px"></i>
+            </div>
+        </div>
+    </aside>
+    <main>
+        <header>
+            <div class="hidden">
+                <p id="title">Tableau de bord</p>
+                <span id="path"><i class="fa-solid fa-house" style="font-size:10px"></i>  Accueil / Dashboard / <strong style="color:var(--orange)">Cours</strong></span>
+            </div>
+            <div id="container">
+                <div id="search" class="hidden">
+                    <i class="fa-solid fa-search"></i>
+                    <input type="text" placeholder="Rechercher...">
+                </div>
+                <div id="icons">
+                    <span class="icon"><i class="fa-regular fa-bell"></i></span>
+                    <span class="icon"><i class="fa-regular fa-envelope"></i></span>
+                    <span class="icon"><i class="fa-solid fa-gear"></i></span>
+                </div>
+                <div style="display: flex;">
+                    <div id="avatar" class="hidden">YS</div>
+                    <div id="date"><i class="fa-regular fa-calendar"></i> 09 Juin 2025</div>
+                </div>
+            </div>
+        </header>
+        <div id="main-header">
+            <div>
+                <h2>Gestion des Cours</h2>
+                <p id="under-head">Gérez, recherchez et organisez tous vos cours en un seul click</p>
+            </div>
+            <div style="display:flex;">
+                <button id="btn-one"><i style="margin-right: 8px;" class="fa-solid fa-file-export"></i> Exporter</button>
+                <button id="btn-two"><i style="margin-right: 8px;" class="fa-solid fa-plus"></i> Nouveau cours</button>
+            </div>
+        </div>
+        <div id="stat-cards">
+            <div class="stat-card">
+                <div class="stat-icon blue"><i class="fa-solid fa-book-open"></i></div>
+                <div>
+                    <p class="stat-header">Total Cours</p>
+                    <p class="stat-num">48</p>
+                    <span class="stat-flesh"><i style="margin-right:5px ;" class="fa-solid fa-arrow-trend-up"></i> +4 ce mois</span>
+                    <span class="stat-desc">6 catégories</span>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon green"><i class="fa-solid fa-circle-check"></i></div>
+                <div>
+                    <p class="stat-header">Cours publiés</p>
+                    <p class="stat-num">48</p>
+                    <span class="stat-flesh"><i style="margin-right:5px ;" class="fa-solid fa-arrow-trend-up"></i> 81% de total</span>
+                    <span class="stat-desc">Actifs et Visibles</span>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon brown"><i class="fa-solid fa-pen-to-square"></i></div>
+                <div>
+                    <p class="stat-header">Brouillons</p>
+                    <p class="stat-num">7</p>
+                    <span style="color: #a32d2d; display: block;"><i style="margin-right:5px ;" class="fa-solid fa-clock"></i> En cours</span>
+                    <span class="stat-desc">Non publiés</span>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon purple"><i class="fa-solid fa-users"></i></div>
+                <div>
+                    <p class="stat-header">Étudiants inscrits</p>
+                    <p class="stat-num">48 320</p>
+                    <span class="stat-flesh"><i style="margin-right:5px ;" class="fa-solid fa-arrow-trend-up"></i> +1 240 cette semaine</span>
+                    <span class="stat-desc">Tous les étudiants</span>
+                </div>
+            </div>
+        </div>
+        <div id="chart-container">
+            <div style="width:100%" id="chart">
+                <div id="chart-header">
+                    <div>
+                        <h3>Répartition par catégorie</h3>
+                        <p id="chart-desc">Distribution des 48 cours actifs</p>
+                    </div>
+                    <div class="donut-squares">
+                        <div class="donut-square"><div style="background:#185fa5"></div> Développement <span class="dleg-val">16</span></div>
+                        <div class="donut-square"><div style="background:#854f0b"></div> Data Science <span class="dleg-val">10</span></div>
+                        <div class="donut-square"><div style="background:#3b6d11"></div> Design <span class="dleg-val">7</span></div>
+                        <div class="donut-square"><div style="background:#993556"></div> Marketing <span class="dleg-val">6</span></div>
+                        <div class="donut-square"><div style="background:#534ab7"></div> Cybersécurité <span class="dleg-val">5</span></div>
+                        <div class="donut-square"><div style="background:#0f6e56"></div> IA <span class="dleg-val">4</span></div>
+                    </div>
+                </div>
+                <canvas style="margin: auto;" id="donutChart"></canvas>
+              </div>
+            </div>
+    </main>
+    <script>
+    new Chart(document.getElementById('donutChart'), {
+    type: 'doughnut',
+    data: {
+      labels: ['Développement','Data Science','Design','Marketing','Cybersécurité','IA'],
+      datasets: [{ data: [16,10,7,6,5,4], backgroundColor: ['#185fa5','#854f0b','#3b6d11','#993556','#534ab7','#0f6e56'], borderWidth: 2, borderColor: '#fff' }]
+    },
+    options: {
+      cutout: '68%', responsive: false,
+      plugins: { legend: { display: false }, tooltip: { callbacks: { label: ctx => ' ' + ctx.label + ' : ' + ctx.raw + ' cours' } } }
+    }
+  });
+    </script>
+</body>
+</html>
