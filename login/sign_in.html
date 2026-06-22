@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="YSN">
+    <meta name="keywords" content="login, authentication">
+    <meta name="description" content="A simple login page ">
+    <title>LearnHub</title>
+    <link rel="stylesheet" href="./../assets/css/sign_in.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h2><i id="head-icon" class="fa-solid fa-graduation-cap"></i><span style="color:#243d5c;"> Learn</span><span style="color:  #f97316;;">Hub</span></h2>
+        <span id="signin">Vous avez un compte ? <a id="sign" href="login.html">Se connecter &#8594;</a></span>
+    </header>
+    <div id="form-container">
+       <div id="essai">
+           <p id="essai-gratuit"><i class="fa-solid fa-rocket"></i> Essai gratuit de 14 jours</p>
+       </div>
+       <h1>Créer votre compte</h1>
+       <p id="under-head">Aucune carte bancaire requise .Annuler à tout moment. </p>
+        <div id="social">
+            <a class="login-btn" id="google-btn" href="#"><i class="fa-brands fa-google"></i> Google</a>
+            <a class="login-btn" id="github-btn" class="github-btn" href="#"><i class="fa-brands fa-github"></i> GitHub</a>
+        </div>
+        <span id="email-btn" class="email" href="#">ou s'inscrire avec un e-mail</span>
+        <form action="#" method="post">
+            <div style="width: 113%;" class="name-pre">
+                <label for="prenom">Nom Complet</label><br>
+                <span class="placeholder-1"><i class="fa-solid fa-user"></i></span>
+                <input id="prenom-input" type="text" id="prenom" name="prenom" placeholder=" Jean" required>
+            </div>
+            <label for="email">E-mail</label><br>
+            <span class="placeholder"><i class="fa-regular fa-envelope"></i></span>
+            <input id="email-input" type="email" id="email" name="email" placeholder=" vous@email.com" required>
+            <label for="role">Niveau d'étude</label><br>
+            <span class="placeholder"><i class="fa-solid fa-user-graduate"></i></span>
+            <select style="width: 103%;" class="role-input" name="role" required>
+                <option value="" disabled selected>Choisissez </option>
+                <option value="product-manager">High school</option>
+                <option value="designer">Bac</option>
+                <option value="other">Bac+1</option>
+                <option value="developer">liscence</option>
+                <option value="marketer">master</option>
+            </select>
+            <label for="role">Domaine d'intérêt</label><br>
+            <span class="placeholder"><i class="fa-solid fa-briefcase"></i></span>
+            <select style="width: 103%;" class="role-input" name="role" required>
+                <option value="" disabled selected>Choisissez </option>
+                <option value="product-manager">Dévelopement</option>
+                <option value="designer">Design</option>
+                <option value="developer">IA</option>
+                <option value="marketer">Python</option>
+                <option value="other">Autre</option>
+            </select>
+            <label for="role">Objectif</label><br>
+            <span class="placeholder"><i class="fa-solid fa-bullseye"></i></span>
+            <select style="width: 103%;" class="role-input" name="role" required>
+                <option value="" disabled selected>Choisissez </option>
+                <option value="product-manager">Etudiant</option>
+                <option value="designer">Formateur</option>
+                <option value="other">Autre</option>
+            </select>
+            <label for="passwd">Mot de passe</label><br>
+            <span class="placeholder"><i class="fa-solid fa-lock"></i></span>
+            <input id="passwd-input" type="password" id="passwd" name="passwd" placeholder="Min 8 caractères" min="8" required><span id="eye"><i class="fa-regular fa-eye"></i></span>
+            <label for="passwd">Confirmer le mot de passe</label><br>
+            <span class="placeholder"><i class="fa-solid fa-lock"></i></span>
+            <input id="passwd-input" type="password" id="passwd" name="passwd" placeholder="Min 8 caractères" min="8" required><span id="eye"><i class="fa-regular fa-eye"></i></span>
+            <div id="check">
+                <input type="checkbox" name="terms" id="terms" required>
+                <div style="display: flex; position: relative;top: -22px;left: 35px;">
+                <label id="terms" for="terms">J'accepte les <a href="#">conditions d'utilisation</a> et la <a href="#">politique de confidentialité</a></label>
+                </div>
+                <div>
+                <input type="checkbox" name="conseils" id="conseils" required>
+                <label for="conseils">Recevoir des conseils et les actualités du produit</label>
+                </div>
+            </div>
+            <button type="submit">Créer un compte gratuit &#8594;</button>
+            <p id="under-submit">En vous inscrivant, vous confirmez avoir acceptez les <a style="color: var(--nav-link-color);" href="#">Conditions</a> et <span style="display: inline-block; margin-left: 20%;"> notre <a style="color: var(--nav-link-color);" href="#">Politique de Confidentialité</a></span>.</p>
+            <p id="log-in">Vous avez déjà un compte ? <a style="color: var(--nav-link-color);" class="sign" href="login.html">Se connecter &#8594;</a></p>
+            <div id="fin">
+                <p style="color: #243d5c;" class="fin"><i style="color: #243d5c;" class="fa-solid fa-calendar"></i><i id="true" style="z-index: 0;" class="fa-solid fa-check"></i> 14 jours gratuits</p>
+                <p style="color: #243d5c;" class="fin"><i style="color: #243d5c;" class="fa-solid fa-credit-card"></i> Sans carte bancaire</p>
+                <p style="color: #243d5c;" class="fin"><i style="color: #243d5c;" class="fa-solid fa-rotate-left"></i> Annuler à tout moment</p>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
