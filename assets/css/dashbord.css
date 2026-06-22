@@ -16,11 +16,11 @@
     --border: #e2e8f0;
 }
 body { 
-    font-family: 'Segoe UI', system-ui, sans-serif; 
-    background-color: var(--bg); 
-    color: var(--text); 
-    min-height: 100vh; 
-    font-size: 14px; 
+    font-family: 'Segoe UI', system-ui, sans-serif !important; 
+    background-color: var(--bg) !important; 
+    color: var(--text) !important; 
+    min-height: 100vh !important; 
+    font-size: 14px !important; 
 }
 .sidebar{
     height: 100vh;
@@ -135,7 +135,6 @@ main {
 header{
     height: 60px;
     background-color:#fff !important;
-    background: var(--white); 
     border-bottom: 1px solid var(--border);
     display: flex;
     align-items: center;
@@ -174,13 +173,12 @@ header{
 }
 #search input:focus{
    border-color: var(--orange); 
-   background: #fff; 
+   background-color: #fff; 
 }
 #search i { 
     position: absolute; 
     left: 10px; 
-    top: 50%; 
-    transform: translateY(-50%); 
+    top: 36%; 
     color: var(--text-light); 
     font-size: 13px; 
 }
@@ -196,7 +194,7 @@ header{
     padding: 8px 12px;
 }
 .icon:hover{
-    background: var(--bg); 
+    background-color: var(--bg); 
     color: var(--text);
 }
 #avatar{
@@ -229,8 +227,6 @@ header{
     width: calc(100% - 220px);
     align-items: center;
 }
-
-
 #main-header{
     display: flex;
     align-items: flex-start;
@@ -314,7 +310,7 @@ h2{
     margin-right: 10px;
 }
 .blue { 
-    background: #e6f1fb; 
+    background-color: #e6f1fb; 
     color: #185fa5; 
 }
 .stat-header { 
@@ -339,7 +335,7 @@ h2{
 }
 .progression { 
     height: 3px; 
-    background: var(--border); 
+    background-color: var(--border); 
     border-radius: 2px; 
     margin-top: 10px; 
 }
@@ -349,7 +345,7 @@ h2{
     background: var(--orange); 
 }
 .green { 
-    background: #eaf3de; 
+    background-color: #eaf3de; 
     color: #3b6d11; 
 }
 .brown { 
@@ -357,7 +353,7 @@ h2{
     color: #854f0b; 
 }
 .purple{
-    background: #eeedfe; 
+    background-color: #eeedfe; 
     color: #534ab7;
 }
 
@@ -497,7 +493,7 @@ h3{
 #searchcourses {
     padding: 7px 11px;
     font-size: 12px;
-    background: var(--bg);
+    background-color: var(--bg);
     border: 1px solid var(--border);
     border-radius: 6px;
     color: var(--text);
@@ -509,13 +505,13 @@ h3{
 
 #searchcourses:focus {
     border-color: var(--orange);
-    background: white;
+    background-color: white;
 }
 
 #filter {
     padding: 7px 10px;
     font-size: 12px;
-    background: var(--bg);
+    background-color: var(--bg);
     border: 1px solid var(--border);
     border-radius: 6px;
     color: var(--text);
@@ -525,7 +521,7 @@ h3{
 }
 
 #btn-export {
-    background: transparent;
+    background-color: transparent;
     border: 1px solid var(--border);
     border-radius: 6px;
     padding: 7px 12px;
@@ -539,11 +535,11 @@ h3{
 #btn-export:hover {
     border-color: var(--orange);
     color: var(--orange);
-    background: var(--orange-light);
+    background-color: var(--orange-light);
 }
 
 #btn-add {
-    background: var(--orange);
+    background-color: var(--orange);
     border: none;
     border-radius: 6px;
     padding: 7px 12px;
@@ -554,7 +550,7 @@ h3{
 }
 
 #btn-add:hover {
-    background: var(--orange-hover);
+    background-color: var(--orange-hover);
     transform: translateY(-1px);
 }
 
@@ -568,7 +564,7 @@ h3{
     font-weight: 600;
     color: var(--text-little-dark);
     padding: 10px 14px;
-    background: var(--bg);
+    background-color: var(--bg);
     border-bottom: 1px solid var(--border);
     text-align: left;
 }
@@ -597,7 +593,7 @@ h3{
 .btn-edit:hover {
     border-color: #185fa5;
     color: #185fa5;
-    background: #e6f1fb;
+    background-color: #e6f1fb;
 }
 
 .btn-del {
@@ -613,22 +609,19 @@ h3{
 .btn-del:hover {
     border-color: #a32d2d;
     color: #a32d2d;
-    background: #fcebeb;
+    background-color: #fcebeb;
 }
-
 .dataTables_wrapper .dataTables_filter,
 .dataTables_wrapper .dataTables_length,
 .dataTables_wrapper .dataTables_info {
     display: none;
 }
-
 .dataTables_wrapper .dataTables_paginate {
     padding: 12px 20px;
     border-top: 1px solid var(--border);
     display: flex;
     justify-content: flex-end;
 }
-
 .dataTables_wrapper .paginate_button {
     padding: 4px 10px;
     border-radius: 5px;
@@ -639,12 +632,10 @@ h3{
     margin: 0 2px;
     background: transparent !important;
 }
-
 .dataTables_wrapper .paginate_button:hover {
     background: var(--bg) !important;
     color: var(--text) !important;
 }
-
 .dataTables_wrapper .paginate_button.current {
     background: var(--orange) !important;
     color: white !important;
@@ -675,7 +666,9 @@ h3{
 @media (width<=1108px)
 {
     body
-    {width: 100% !important;}
+    {
+        width: 100% !important;
+    }
     .hidden
     {
         display: none !important;
