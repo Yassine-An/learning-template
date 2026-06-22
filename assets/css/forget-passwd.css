@@ -1,0 +1,156 @@
+:root { 
+    --background-color: #f0effe;
+    --header-color: #f4f3ff;
+    --login-container-card: #ffffff;
+    --border-top:#6366f1;
+    --main-heading-color: #0f0e1a;
+    --paragraph-color: #6b6b8a;
+    --placeholder-color: #a9a9c8;
+    --nav-link-color: #4f46e5;
+    --main-btn-background: #4f46e5;
+    --main-btn-text-color: #ffffff;
+    --social-btn-background: #fff;
+    --social-btn-border: #e8e7f5;
+    --social-btn-text-color: #2d2b55;
+    --email-password-field-background: #ffffff;
+    --email-password-field-border: #e8e7f5;
+    --input-icon-color:#a9a9c8;
+    --bon-retour-background: #eef2ff;
+    --bon-retour-color: #4f46e5;
+    --security-msg-background: #eef2ff;
+    --info-box-border:#e0e7ff;
+    --success-state:#10b981;
+    --success-icon-background:#ecfdf5;
+    --progress-bar-background:#e8e7f5;
+    --progress-bar-fill:#818cf8;
+    --checkbox-border:#c7c6e4;
+    --otp-text-color:#4338ca;
+    --requirement-box-background:#eeeeff;
+    --footer-text-color:#6b6b8a;
+}
+body {
+    background-color: var(--background-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height:800px ;
+    width: 100%;
+}
+header {
+    background-color: var(--header-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    font-size: 14px;
+    margin-bottom: 30px;
+    width: 100%;
+    flex-flow: nowrap;
+}
+a{
+    color: var(--nav-link-color);
+    margin-right: 20px;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+#head-icon{
+    background-color: #243d5c;
+    margin-left: 20px;
+    border: 1px solid transparent;
+    color: var(--bon-retour-background);
+    padding: 6px 8px;
+    border-radius: 10px;
+    font-size: 24px;
+}
+#login{
+    color: var(--footer-text-color);
+}
+#container {
+    background-color: var(--login-container-card);
+    width: 30%;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 15px;
+    border-top: 3px solid #243d5c;;
+    position: relative;
+}
+#first-icon{
+    background-color: #243d5c;;
+    color: var(--bon-retour-background);
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-left: 40%;
+}
+h1 {
+    color: var(--main-heading-color);
+    margin-bottom: 10px;
+    margin: 20px 0 10px 25px;
+}
+p {
+    color: var(--paragraph-color);
+    margin: 0 0 20px 10px;
+    font-size: 14px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 0 10px;
+}
+input[type="email"] {
+    background-color: var(--email-password-field-background);
+    border: 1px solid var(--email-password-field-border);
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    padding-left: 35px;
+    width: 90%;
+}
+input[type="email"]::placeholder {
+    color: var(--placeholder-color);
+}
+input[type="email"]:focus {
+    outline: none;
+    border-color:#94a3b8;
+    box-shadow: 0 0 5px #94a3b8;
+}
+button[type="submit"] {
+    background-color: #243d5c;;
+    color: var(--main-btn-text-color);
+    border: none;
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 30px;
+    transition:0.3s ease;
+}
+button[type="submit"]:hover {
+    background-color: #243d5c;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(67, 56, 202, 0.2);
+}
+
+#back-login{
+    margin-left: 25%;
+}
+#under{
+    display: flex;
+    justify-content: space-between;
+    width: 110%;
+    margin-left: -25px;
+}
+.fin{
+   border: 1px solid var(--info-box-border);
+   padding: 6px 10px;
+   border-radius: 15px;
+   font-size: 13px;
+   margin-top: 20px
+}
+.fin i{
+    color: #243d5c !important;
+}
