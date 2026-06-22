@@ -26,7 +26,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    min-height:1200px ;
+    min-height:100vh ;
     width: 100%;
 }
 header {
@@ -298,7 +298,7 @@ a{
         margin-bottom: 5px;
     }
     .login-btn{
-        padding: 5px 30px;
+        padding: 5px 20px;
         margin: 5px;
         width: 100%;
         text-align: center;
@@ -377,9 +377,7 @@ a{
     border: 1px solid var(--info-box-border);
     padding: 3px 4px;
     border-radius: 15px;
-    font-size: 8px;
+    font-size: 7px;
     text-align: center;
     }
-
-
 }
