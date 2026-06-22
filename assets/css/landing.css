@@ -1,31 +1,23 @@
 body
 {
-    width:100%;
-    padding: 0;
-    margin: 0;
-    font-size: 14px !important;
+    width:95%;
+    font-size: 1rem !important;
 }
+h4{font-size:medium !important;}
 
-h1
-{
-    /* color: #8d949b !important; */
-    font-size: 30px !important;
- }
-
-header div h4,nav{
-    display: inline-block;
-    margin: 0px 8px;
-}
 header
 {
+    
     display:flex;
     width:100%;
+    justify-content: space-around;
     max-height: 80px;
-    padding: 10px 20px 10px 40px;
-    justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid  #b1b5b9;
+    border-bottom: 1px solid  #979797;
+    font-size: small !important;
+    padding:4px 0;
 }
+
 .button-orange
 {
     border:1px solid transparent ;
@@ -33,13 +25,23 @@ header
     background-color: #F97316;
     color:#fff;
     margin-right: 10px;
+    animation-name: font-append;
+    animation-duration: 5s;
+    animation-name: pop;
+    animation-duration: 4s;
+    animation-timing-function:ease-out;
+    animation-iteration-count: infinite;
 }
+
+
 
 .button-gris
 {
     border:1px solid transparent ;
     border-radius: 20px;
     background-color: #8d949b;
+    animation-name: font-append;
+    animation-duration: 5s;
 }
 .button-gris:hover
 {
@@ -51,8 +53,9 @@ header
     text-decoration: none;
     display: inline-block;
     color: black;
-    padding: 8px 10px;
     transition: all 0.3s ease;
+    width: fit-content !important;
+    padding: 5px !important;
 }
 .link:hover
 {
@@ -72,6 +75,8 @@ header
     color: #f97316 !important;
     background-color: transparent !important;
 }
+
+
 main
 {
     width:100%;
@@ -82,7 +87,9 @@ main
 {
     min-height:100px;
     padding:10px;
+    
 }
+h1{font-size: 1.5rem !important;}
 #c1
 {
     box-shadow: 1px 1px 2px 2px rgb(0, 0, 0,0.2); 
@@ -92,6 +99,9 @@ main
     padding:10px 3px 10px 20px !important;
     width:60%;
     max-height: 400px;
+    background: #f8fafc;
+    animation-name: font-append;
+    animation-duration: 5s;
 }
 #chield1 img
 {
@@ -100,7 +110,6 @@ main
     border-radius: 10px;
     margin-top: 20px;
     margin-bottom: 20px;
-
 }
 #info
 {
@@ -118,26 +127,37 @@ main
     position: relative;
     padding-left:35px;
     margin-top: 15px;
+    animation-name: font-append;
+    animation-duration: 5s;
 }
 .icon
 {
     position: absolute;
     left:10px ;
     top:17px;
+    animation-name: font-append;
+    animation-duration: 5s;
 }
-#chield2 , #chield3 , #chield4 , #chield5
+
+
+#chield2
 {
     width:100%;
     min-height: 250px;
-    padding:45px;
+    padding:15px;
 }
+h2
+{
+    margin:  30px 0px 25px 10px !important;
+    font-size: larger !important;
+}
+
 .Formations
 {
+    width: 100%;
     display:flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    margin-top: 30px;
-    width:100%;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
 }
 .cards
 {
@@ -145,14 +165,24 @@ main
     border:1px solid transparent;
     border-radius:10px;
     box-shadow: 0 2px 2px 0 rgba(107, 104, 104, 0.4);
-    margin:0 15px;
-    width:32%;
-    padding:15px;
+    width:25%;
+    padding:8px;
+    margin: 9px 10px;
+    min-height: fit-content;
+    transform: scale(1,1);
+    
 }
+.cards:hover
+{
+    transform:scale(1.04,1.04) ;
+    transition: transform 1.2s;
+    transition-timing-function:ease-in-out;
+}
+
 .cards img
 {
     width:100%;
-    max-height: 200px;
+    max-height: 140px;
     margin-bottom:8px ;
     border:1px solid transparent;
     border-radius: inherit;
@@ -162,6 +192,14 @@ main
     display:flex;
     justify-content: space-between;
     margin-top: 5px;
+}
+
+
+#chield3
+{
+    width:100%;
+    min-height: 250px;
+    padding:15px;
 }
 #chield3 div 
 {
@@ -181,6 +219,10 @@ main
     font-size: 11px;
     position:relative;
     cursor: pointer;
+    animation-name: pop;
+    animation-duration: 7s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;    
 }
 .parcours-icons
 {
@@ -189,6 +231,7 @@ main
     left :15px;
     font-size: 18px ;
 }
+
 
 #chield4 div 
 {
@@ -199,25 +242,30 @@ main
 .formateurs
 {
     display: flex;
-    flex-flow: column;
+    flex-flow: column nowrap;
     align-items: center ;
+    width:15%;
     justify-content: center;
     background-color:rgba(238, 238, 238, 0.1);
     border:1px solid transparent;
-    border-radius:20px;
+    border-radius:25px;
     padding:10px;
     text-align: center;
     font-size: 15px;
-    
+    animation-name: background-change;
+    animation-duration: 2.8s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
 
 }
 .formateurs img
 {
     width:40%;
-    max-height: 160px;
-    border-radius: 50%;
+    max-height: 80px;
     margin-bottom: 20px;
 }
+
+
 #chield5 div
 {
     display:flex;
@@ -242,22 +290,20 @@ main
     display:flex;
     justify-content: flex-start !important;
     margin: 5px;
-
-    
 }
 .avis div img
 {
-    width:15%;
-    height: 60px;
+    width:12%;
+    height: 45px;
     margin-right: 15px;
-    border-radius: 50%;
 }
+
 
 #chield6
 {
     display: flex;
     flex-flow: row nowrap;
-    margin-top: 50px;
+    margin-top: 80px;
     justify-content: space-between;
     width:100%;
 }
@@ -265,20 +311,29 @@ main
 {
     display:flex;
     justify-content: space-between;
-    padding:10px;
+    align-items: center !important;
+    padding:15px;
     width:23%;
+    height: fit-content !important;
     border:1px solid transparent;
     border-radius:15px;
     box-shadow:1px 3px 3px 1px rgba(119, 119, 119, 0.1);
+
+    animation-name:pop;
+}
+.info p
+{
+    margin: 0px;
 }
 
 footer
 {
     display:flex;
+    width: 100%;
     justify-content: space-between;
-    margin-top: 50px;
+    margin-top: 80px;
     padding: 20px 40px;
-    font-size: 12px;
+    font-size: 14px !important;
 }
 input[type=email]
 {
@@ -295,179 +350,229 @@ input[type=email]
 .btn
 {
     border-radius: 20px !important;
+    width:fit-content !important;
+    height: fit-content !important;
 }
 
 
 
-@media (width<=750px){
-    body
+@media (width<=1000px)
+{
+
+    h4{
+        display:inline-block !important;
+        width: 30% !important;
+    }
+
+    header div
     {
-        font-size: 2.5vw !important;
+        width: 70% !important;
+        padding: 0px !important;
     }
-    h1{
-        font-size:5vw !important;
+
+    header{
+        width:100%; 
+        display: flex;
+        justify-content: space-between !important;
+        min-height: 50px !important;
     }
-    header
+    nav
     {
-        width: 100%;
-        font-size: 2vh;
+        display: none;
     }
-    header div h4,nav{
-        margin: 0px 2vh;
-    }
-    header
+
+    body,main
     {
-        max-height: 20vh;
-        padding: 1vh 1vw 1vh 2vw;
+        padding: 0px !important;
     }
-    .button-orange
-    {
-        margin-right: 1vw;
-    }
-    .link
-    {
-     
-        padding: 0.8vh 0.5vw;
-    }
-    .head-link
-    {
-        margin: 0.5vw !important;
-    }
-    main
-    {
-        min-height:25vh;
-        padding:2.5vw;
-    }
+    h1{font-size:x-large !important;}
     #chield1
     {
-        min-height:10vh;
-        padding:0.5vw;
+        flex-direction: column;
+    }
+    #chield1>img
+    {
+        display: none;
     }
     #c1
     {
-        margin: 0.5vh 1vw ;
-        padding:1vh 0.03vw 1vh 1vw !important;
-        max-height: 40vh;
+        width: 90%;
+        max-height:800px ;
+        padding:5px;
+        margin:10px;
     }
-    #chield1 img
-    {
-        margin:1vw 0px;
-        width:30%;
+    #info{
+        flex-direction: column;
+
     }
-    #info
-    {
-        margin-top: 1.5vw ;
+    #info>p{
+        width: 86%;
+        text-align: center;
     }
-    #info p
-    {
-        padding:0.3vh 0.02vw 0.3vh 0.5vw;
-        padding-left:1.7vw;
-        margin-top: 1.5vh;
-    }
-    .icon
-    {
-        left:0.5vw ;
-        top:1.7vh;
-    }
-    #chield2 , #chield3 , #chield4 , #chield5
-    {
-        min-height: 25vh;
-        padding:2.25vw;
-    }
-    .Formations
-    {
-        margin-top: 3vh;
-    }
+
     .cards
     {
-        margin:0 0.7vw;
-        padding:0.7vw;
+        width:100%;
     }
-    .cards img
+    h2
     {
-        max-height: 20vh;
-        margin-bottom:0.8vh ;
+        margin:  10px 0px 8px 7px !important;
+        font-size: medium !important;
     }
-    .formation-info
+
+    #chield3 div
     {
-        margin-top: 0.5vh;
-    }
-    #chield3 div 
-    {
-        margin-top: 2vh;
+        flex-direction: column;
+        
     }
     #chield3 div p
     {
-        margin:1.5vh 0.05vw ;
-        padding:0.5vw;
-        padding-left:2.2vw;
-        font-size: 1.1vh;
+        width: 90%;
+        margin: auto;
+        animation-duration: 9s;
+        margin:10px 0px;
     }
-    .parcours-icons
-    {
-        top:2.5vh ;
-        left :0.7vw;
-        font-size: 1.8vh ;
-    }
+
 
     #chield4 div 
     {
-        margin-top: 2.2vw;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        margin-top: 25px;
     }
     .formateurs
     {
-        padding:0.5vw;
-        font-size: 0.7vw;
+        width:44%;
+        flex-flow: column nowrap !important;
     }
-    .formateurs img
+
+
+    #chield5
     {
-        width:40%;
-        max-height: 16vh;
-        margin-bottom: 2vh;
+        width: 100%;
     }
     #chield5 div
     {
-        margin-top: 2.5vh;
+        flex-flow: column;
+        width: 100%;
+        justify-content: center;
     }
-
     .avis
     {
-        padding:0.5vw;
-        font-size:0.6vw;
+        max-width:100% !important;
+        font-size:12px;
     }
     .avis div
     {
-        margin: 0.05vw;
-    }
-    .avis div img
-    {
-        height: 6vh;
-        margin-right: 0.75vw;
-    }
-
+        flex-flow: row nowrap !important;
+        align-items: center !important;
+    } 
+    
     #chield6
     {
-        margin-top: 5vh;
+        flex-flow: column;
+        align-items:center !important;
+        margin-top: 50px;
+        
     }
     .info
     {
-        padding:0.5vw;
+        width:97%;
+        margin-bottom: 15px;
     }
 
+    
     footer
     {
-        margin-top: 5vh;
-        padding: 2vh 2vw;
-        font-size: 0.6vw;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        margin-top: 25px;
+        padding: 10px 15px;
+        font-size: 0.8rem !important;
+    } 
+    footer div
+    {
+        width: 95%;
+        margin-top: 15px;
     }
     input[type=email]
     {
-        padding:0.2vh 0.02vw 0.2vh 0.5vw;
+        padding:2px 2px 2px 5px;
     }
     #reseaux
     {
-      
-        word-spacing: 0.08vw;
+        word-spacing: 4px;
     }
- 
+    .btn
+    {
+        border-radius: 20px !important;
+        width:15%  !important;
+    }
 }
+
+@keyframes font-append
+{
+    from{
+        color:#f8fafc;
+        background-color:#f8fafc;
+    }
+    to{
+        color:black;
+    }
+}
+@keyframes pop
+{
+    0%
+    {
+        transform: scale(0.95,0.95)  ;
+    }
+    25%
+    {
+        transform: scale(1,1) ;
+    }
+    50%
+    {
+        transform: scale(1.05,1.05) ;
+    }
+    75%
+    {
+        transform: scale(1,1) ;
+    }
+    100%
+    {
+        transform: scale(0.95,0.95) ;
+    }
+}
+
+@keyframes background-change
+{
+    0%{
+        background-color:rgba(173, 193, 199, 0.4);
+    }
+    15%{
+        background-color: rgba(173, 193, 199, 0.3);
+    }
+    30%
+    {
+        background-color: rgba(173, 193, 199, 0.2);
+    }
+    45%
+    {
+        background-color: rgba(173, 193, 199, 0.1);
+    }
+    60%
+    {
+        background-color: rgba(173, 193, 199, 0.2);
+    }
+    75%
+    {
+        background-color: rgba(173, 193, 199, 0.3);
+    }
+    100%{
+        background-color:rgba(173, 193, 199, 0.35);
+    }
+}
+

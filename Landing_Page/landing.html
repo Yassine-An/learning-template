@@ -9,30 +9,28 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"/>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" defer></script>
     </head>
-    <body>
-        <header>
-            <div>
-                <h4><i class="fa-solid fa-graduation-cap" style="color:  #10B981;"></i> LearnHub</h4>
-                <nav>
-                    <a class="link head-link" href="#">Accueil</a>
-                    <a class="link head-link" href="#">Formations</a>
-                    <a class="link head-link" href="#">Parcours</a>
-                    <a class="link head-link" href="#">Formateurs</a>
-                    <a class="link head-link" href="#">Tarifs</a>
-                </nav>
-            </div>
-            <div>
-                <a href="#" class="button-orange link">Découvrir les Formations</a>
+    <body class="container-fluid">
+        <header class="row">
+            <h4 class="col-lg-2 col-md-2"><i class="fa-solid fa-graduation-cap" style="color:  #10B981;"></i> LearnHub</h4>
+            <nav class="col-lg-5 col-md-5" >
+                <a class="link head-link" href="#">Accueil</a>
+                <a class="link head-link" href="#chield2">Formations</a>
+                <a class="link head-link" href="#chield3">Parcours</a>                    
+                <a class="link head-link" href="#chield4">Formateurs</a>
+                <a class="link head-link" href="#chield6">Tarifs</a>
+            </nav>
+            <div class="col-lg-3 col-md-3 ">
+                <a href="#chield2" class="button-orange link">Découvrir les Formations</a>
                 <a href="#" class="button-gris link">Se connecter</a>
             </div>
         </header>
         <main class="container-fluid">
             <section class="row" id="chield1">
-                <div class="col-lg-7 col-md-7 col-sm-7" id="c1">
+                <div class="col-lg-7 col-md-7 " id="c1">
                     <h1>Élevez vos compétences avec LearnHub-<br>Formations professionnelles et parcours certifiants</h1>
                     <p>Accèdez à des cours pratiques creès par des formateurs experts,suivez des parcours<br>structures et obtenez des certificats reconnus pour booster votre carrière.</p>
-                    <a  class="button-orange link">Découvrir les Formations</a>
-                    <a  class="button-gris link">Voir les Parcours</a><br/>
+                    <a href="#chield2" class="button-orange link">Découvrir les Formations</a>
+                    <a  class="button-gris link hvr-bob">Voir les Parcours</a><br/>
                     <div id="info">
                         <p style="background-color:  #d8f8ed;"><i class="fa-solid fa-chalkboard-user icon"></i><strong>+320 Formations</strong><br/>Pratiquer et à jour</p>
                         <p style=" background-color: #f7d4ba;"><i class="fa-solid fa-user-graduate icon"></i><strong>+20k Étudiants</strong><br/>Apprenarée engagée</p>
@@ -40,13 +38,13 @@
                     </div>
 
                 </div>
-                <img src="./../assets/images/img1.jpg" class="col-lg-4 col-md-4 col-sm-4" alt="Illustration de formation LearnHub"/>
+                <img src="./../assets/images/loading-page/bag1.jpg" class="col-lg-4 col-md-4 " alt="Illustration de formation LearnHub"/>
             </section>
             <section id="chield2">
                 <h2>Formations Populaires</h2>
                 <div class="Formations">
                     <div class="cards">
-                        <img src="./../assets/images/img1.jpg" alt="Image de la formation Digital : Stratégies Efficaces"/>
+                        <img src="./../assets/images/loading-page/bg Develop.jpg" alt="Image de la formation Digital : Stratégies Efficaces"/>
                         <p><strong>Digital : Stratégies Efficaces</strong></p>
                         <p class="formation-info"><span>Marketing</span><span>intermédaire-6h</span></p>
                         <div class="formation-info">
@@ -55,16 +53,16 @@
                         </div>
                     </div>
                     <div class="cards">
-                        <img src="./../assets/images/img1.jpg" alt="Image de la formation Développement Web Moderne avec React"/>
+                        <img src="./../assets/images/loading-page/bg marketing.jpg" alt="Image de la formation Développement Web Moderne avec React"/>
                         <p><strong>Développement Web Moderne avec React</strong></p>
                         <p class="formation-info"><span>Développement</span><span>Avancé-20h</span></p>
                         <div class="formation-info">
                             <a href="#" class="button-orange link">Voir Plus</a>
-                            <span>Formateur lucas Bernard</span>
+                            <span>Formateur Amina k.</span>
                         </div>
                     </div>
                     <div class="cards">
-                        <img src="./../assets/images/img1.jpg" alt="Image de la formation Data Science pour Décideurs"/>
+                        <img src="./../assets/images/loading-page/base de donnes.jpg" alt="Image de la formation Data Science pour Décideurs"/>
                         <p><strong>Data Science pour Décideurs</strong></p>
                         <p class="formation-info"><span>Data</span><span>Débutant-20h</span></p>
                         <div class="formation-info">
@@ -72,10 +70,8 @@
                             <span>Formateur Amina k.</span>
                         </div>
                     </div>
-                </div>
-                <div class="Formations">
                     <div class="cards">
-                        <img src="./../assets/images/img1.jpg" alt="Image de la formation Gestion de Projet Agile"/>
+                        <img src="./../assets/images/loading-page/gestion.jpg" alt="Image de la formation Gestion de Projet Agile"/>
                         <p><strong>Gestion de Projet Agile</strong></p>
                         <p class="formation-info"><span>Gestion</span><span>Intermédiaire-32h</span></p>
                         <div class="formation-info">
@@ -84,7 +80,7 @@
                         </div>
                     </div>
                     <div class="cards">
-                        <img src="./../assets/images/img1.jpg" alt="Image de la formation UX Design : De l'idée au prototype"/>
+                        <img src="./../assets/images/loading-page/ux.jpg" alt="Image de la formation UX Design : De l'idée au prototype"/>
                         <p><strong>UX Design : De l'idée au prototype</strong></p>
                         <p class="formation-info"><span>Design</span><span>Débutant-8h</span></p>
                         <div class="formation-info">
@@ -93,7 +89,7 @@
                         </div>
                     </div>
                     <div class="cards">
-                        <img src="./../assets/images/img1.jpg" alt="Image de la formation Introduction à la Cybersécurité"/>
+                        <img src="./../assets/images/loading-page/cyber.jpg" alt="Image de la formation Introduction à la Cybersécurité"/>
                         <p><strong>Introduction à la Cybersécurité</strong></p>
                         <p class="formation-info"><span>Sécurité</span><span>Intermédiaire-9h</span></p>
                         <div class="formation-info">
@@ -104,19 +100,19 @@
                 </div>
             </section>
             <section id="chield3">
-                <h2>Parcours d'Apprentissage</h2>
-                <div>
-                    <p><i class="fa-solid fa-laptop-code parcours-icons" style="color: #10B981;"></i><strong>Fullstack Web Developer</strong><br><small><span>Apprendre fontend et backend pour<br>construire des applications complétes</span></small></p>
-                    <p><i class="fa-solid fa-chart-line parcours-icons" style="color: #F97316;"></i><strong>Data & Analytics</strong><br><small><span>Maitrisez l'analyse de données, visualisation et <br>prise de décitions</span></small></p>
-                    <p><i class="fa-solid fa-user-tie parcours-icons" style="color: blue;"></i><strong>Leadership & Management</strong><br><small><span>Développez des compètances managériales et <br>de communication</span></small></p>
-                    <p><i class="fa-solid fa-shield-halved parcours-icons" style="color:grey;"></i><strong>Sécurité Informatique</strong><br><small><span>Comprenez les fondamentaux pour protéger <br>les Systèmes et données</span></small></p>
-                </div>
+                    <h2>Parcours d'Apprentissage</h2>
+                    <div>
+                        <p><i class="fa-solid fa-laptop-code parcours-icons" style="color: #10B981;"></i><strong>Fullstack Web Developer</strong><br><small><span>Apprendre fontend et backend pour<br>construire des applications complétes</span></small></p>
+                        <p><i class="fa-solid fa-chart-line parcours-icons" style="color: #F97316;"></i><strong>Data & Analytics</strong><br><small><span>Maitrisez l'analyse de données, visualisation et <br>prise de décitions</span></small></p>
+                        <p><i class="fa-solid fa-user-tie parcours-icons" style="color: blue;"></i><strong>Leadership & Management</strong><br><small><span>Développez des compètances managériales et <br>de communication</span></small></p>
+                        <p><i class="fa-solid fa-shield-halved parcours-icons" style="color:grey;"></i><strong>Sécurité Informatique</strong><br><small><span>Comprenez les fondamentaux pour protéger <br>les Systèmes et données</span></small></p>
+                    </div>
             </section>
             <section id="chield4">
                 <h2>Formateurs Vedettes</h2>
                 <div>
                     <div class="formateurs">
-                        <img src="./../assets/images/img1.jpg" alt="Image du formateur Claire Moreau"/>
+                        <img src="./../assets/images/loading-page/formateur 1.jpg" class="rounded-circle" alt="Image du formateur Claire Moreau"/>
                         <p>
                             <strong>Claire Moreau</strong><br>
                             <small>Marketing Digital</small><br>
@@ -124,7 +120,7 @@
                         </p>
                     </div>
                     <div class="formateurs">
-                        <img src="./../assets/images/img1.jpg" alt="Image du formateur Lucas Bernard"/>
+                        <img src="./../assets/images/loading-page/formateur 2.jpg " class="rounded-circle" alt="Image du formateur Lucas Bernard"/>
                         <p>
                             <strong>Lucas Bernard</strong><br>
                             <small>Développement Web</small><br>
@@ -132,7 +128,7 @@
                         </p>
                     </div>
                     <div class="formateurs">
-                        <img src="./../assets/images/img1.jpg" alt="Image du formateur Amina k."/>
+                        <img src="./../assets/images/loading-page/formateur 3.jpg" class="rounded-circle" alt="Image du formateur Amina k."/>
                         <p>
                             <strong>Amina k.</strong><br>
                             <small>Data Science</small><br>
@@ -140,7 +136,7 @@
                         </p>
                     </div>
                     <div class="formateurs">
-                        <img src="./../assets/images/img1.jpg" alt="Image du formateur Marc Delis"/>
+                        <img src="./../assets/images/loading-page/formateur 4.jpg" class="rounded-circle" alt="Image du formateur Marc Delis"/>
                         <p>
                             <strong>Marc Delis</strong><br>
                             <small>Gestion de Projet</small><br>
@@ -154,21 +150,21 @@
                 <div id="cont">
                     <div class="avis">
                         <div>
-                            <img src="./../assets/images/img1.jpg" alt="Image de Élodie Perrot"/>
+                            <img src="./../assets/images/loading-page/student 1.jpg" class="rounded-circle" alt="Image de Élodie Perrot"/>
                             <p><strong>Élodie Perrot</strong><br><small>Parcour Data & Analytics</small></p>
                         </div>
                         <p>"Les cours m'ont permis de décrocher un poste d'analyste juréor.<br>Contenu trés pratique et formateurs disponibles."</p>
                     </div>
                     <div class="avis">
                         <div>
-                            <img src="./../assets/images/img1.jpg" alt="Image de Karim Haddad"/>
+                            <img src="./../assets/images/loading-page/s2.jpg" class="rounded-circle" alt="Image de Karim Haddad"/>
                             <p><strong>Karim Haddad</strong><br><small>Cours Développement Web</small></p>
                         </div>
                         <p>"La formlait projet m'a aide à constituer un portfolio concret.Les<br>retours des Formations étaient prècis."</p>
                     </div>
                     <div class="avis">
                         <div>
-                            <img src="./../assets/images/img1.jpg" alt="Image de Sophie laurent"/>
+                            <img src="./../assets/images/loading-page/s3.jpg" class="rounded-circle" alt="Image de Sophie laurent"/>
                             <p><strong>Sophie laurent</strong><br><small>Cours UX Design</small></p>
                         </div>
                         <p>"Méthodologie claire et beaucoup d'exemples réels.j'ai obtenu un<br>stage grace à ce cours."</p>
@@ -193,21 +189,20 @@
                     <p><i class="fa-solid fa-award" style="color:grey;"></i></p>
                 </div>
             </section>
+            <footer>
+                <div>
+                    <h5><i class="fa-solid fa-graduation-cap" style="color:  #10B981;"></i>  LearnHub</h5>
+                    <p>Plateforme d'apprentissage professionnelles~learnhub@gmail.com<br>+33 123 45 67 89</p>
+                </div>
+                <div >
+                    <h6>Réseaux & Liens</h6>
+                    <p id="reseaux"><b> <i class="fa-brands fa-facebook-f"></i> <i class="fa-brands fa-x-twitter"></i> <i class="fa-brands fa-linkedin"></i> <i class="fa-brands fa-instagram"></i></b></p>            </div> 
+                <div>
+                    <h6>Newsletter</h6>
+                    <input type="email" placeholder="Votre email"/>
+                    <input type="button" class="btn btn-primary " value="Save"/>
+                </div>
+            </footer>
         </main>
-        <footer>
-            <div>
-                <h5><i class="fa-solid fa-graduation-cap" style="color:  #10B981;"></i>  LearnHub</h5>
-                <p>Plateforme d'apprentissage professionnelles~learnhub@gmail.com<br>+33 123 45 67 89</p>
-            </div>
-            <div >
-                <h6>Réseaux & Liens</h6>
-                <p id="reseaux"><b> <i class="fa-brands fa-facebook-f"></i> <i class="fa-brands fa-x-twitter"></i> <i class="fa-brands fa-linkedin"></i> <i class="fa-brands fa-instagram"></i></b></p>
-            </div> 
-            <div>
-                <h6>Newsletter</h6>
-                <input type="email" placeholder="Votre email"/>
-                <input type="button" class="btn btn-primary " value="Save"/>
-            </div>
-        </footer>
     </body>
 </html>
