@@ -264,3 +264,123 @@ a{
    border-radius: 15px;
    font-size: 13px;
 }
+
+
+
+@media (width<=480px)
+{
+    header {
+        height: 45px;
+        font-size: xx-small;
+        margin-bottom: 10px;
+    }
+    #head-icon{
+        margin-left: 10px;
+        padding: 3px 4px;
+        border-radius: 5px;
+        font-size: xx-small !important;
+    }
+    #sign{
+        margin-right: 25px;
+    }
+    #form-container {
+        width: 70%;
+        margin: 0 auto;
+        padding:20px 20px 7px;
+        font-size: x-small !important;
+    }
+    #essai-gratuit{
+        padding: 4px 6px;
+        font-size: 12px !important;
+        width: 180px;
+    }
+    #under-head{
+        font-size: 11px;
+        margin-bottom: 5px;
+    }
+    .login-btn{
+        padding: 5px 30px;
+        margin: 5px;
+        width: 100%;
+        text-align: center;
+    }
+    #email-btn{
+        margin-left: 25%;
+        margin-bottom: 10px;
+    }
+    /* .name-pre{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    } */
+    .name-pre label{
+        margin-bottom: -2px;
+    }
+    input[type="text"]{
+        width: 78%;
+        padding: 8px;
+        padding-left: 20px;
+        margin-bottom: 10px;
+    }
+    .placeholder-1{
+        margin-left: 12px;
+        margin-top: 6px;  
+        top: 29px;
+    }
+    .placeholder{
+        margin-left: 12px;
+        margin-top: 18px;
+    }
+    input[type="email"], input[type="password"],select{
+        width: 88%;
+        padding: 8px;
+        padding-left: 20px;
+        margin-bottom: 10px;
+        margin-top: 8px;
+    }
+    #eye{
+        right: 35px;
+        margin-top: -31px;
+        cursor: pointer;
+    }
+    button[type="submit"] {
+        padding: 10px;
+        font-size: 14px;
+        width: 97%;
+    }
+    #passwd-input
+    {
+        margin-left: 5px;
+    }
+    #under-submit{
+        font-size: xx-small !important;
+        margin-top: 10px;
+        margin-left: 15px;
+        line-height: 20px;
+    }
+    #deff
+    {
+        margin-left: 0px !important;
+    }
+    #log-in{
+        font-size:smaller !important;
+        margin-top: 10px;
+        margin-left: 18%;
+    }
+    #fin{
+        width: 100%;
+        margin-left: 0px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .fin{
+    border: 1px solid var(--info-box-border);
+    padding: 3px 4px;
+    border-radius: 15px;
+    font-size: 8px;
+    text-align: center;
+    }
+
+
+}
