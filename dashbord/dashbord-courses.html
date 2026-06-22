@@ -9,6 +9,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="./../assets/css/dashbord.css">
     <link rel="icon" type="image/x-icon" href="./../assets/images/icon/icon.png"/>
 </head>
@@ -42,7 +44,7 @@
     <main>
         <header>
             <div class="hidden">
-                <p id="title">Tableau de bord</p>
+                <p style="margin-bottom: 0;" id="title">Tableau de bord</p>
                 <span id="path"><i class="fa-solid fa-house" style="font-size:10px"></i>  Accueil / Dashboard / <strong style="color:var(--orange)">Cours</strong></span>
             </div>
             <div id="container">
@@ -127,6 +129,126 @@
                 </div>
                 <canvas style="margin: auto;" id="donutChart"></canvas>
               </div>
+            </div>
+            <div id="table-div">
+                <div id="table-header">
+                    <h3 id="table-title"><i class="fa-solid fa-book-open"></i> Cours récents</h3>
+                    <div id="table-controls">
+                        <input type="text" id="searchcourses" placeholder="Rechercher cours...">
+                        <span id="filter-icon"><i class="fa-solid fa-filter"></i></span>
+                        <select id="filter" class="hidden">
+                            <option value="">Toutes catégories</option>
+                            <option>Développement</option>
+                            <option>Data Science</option>
+                            <option>Design</option>
+                            <option>Marketing</option>
+                            <option>Cybersécurité</option>
+                        </select>
+                        <button id="btn-export"><i class="fa-solid fa-download"></i> Exporter</button>
+                        <button id="btn-add"><i class="fa-solid fa-plus"></i> Ajouter cours</button>
+                    </div>
+                </div>
+                <div class="table-responsive">
+                <table id="coursesTable" class="table" >
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Cours</th>
+                            <th>Formateur</th>
+                            <th>Catégorie</th>
+                            <th>Niveau</th>
+                            <th>Durée</th>
+                            <th>Actions</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>#001</td>
+                        <td>React & Next.js — De Zéro à Expert</td>
+                        <td>A. Alaoui</td>
+                        <td>Développement</td>
+                        <td>Intermédiaire</td>
+                        <td>42h</td>
+                        <td>
+                            <a href="#" class="btn-edit"><i class="fa-solid fa-pen"></i></a>
+                            <a href="#" class="btn-del"><i class="fa-solid fa-trash"></i></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>#002</td>
+                        <td>Python & Machine Learning Complet</td>
+                        <td>S. Benali</td>
+                        <td>Data Science</td>
+                        <td>Avancé</td>
+                        <td>58h</td>
+                        <td>
+                            <a href="#" class="btn-edit"><i class="fa-solid fa-pen"></i></a>
+                            <a href="#" class="btn-del"><i class="fa-solid fa-trash"></i></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>#003</td>
+                        <td>UI/UX Design avec Figma 2025</td>
+                        <td>K. Mansouri</td>
+                        <td>Design</td>
+                        <td>Débutant</td>
+                        <td>35h</td>
+                        <td>
+                            <a href="#" class="btn-edit"><i class="fa-solid fa-pen"></i></a>
+                            <a href="#" class="btn-del"><i class="fa-solid fa-trash"></i></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>#004</td>
+                        <td>Marketing Digital & SEO Avancé</td>
+                        <td>L. Ouhabi</td>
+                        <td>Marketing</td>
+                        <td>Intermédiaire</td>
+                        <td>28h</td>
+                        <td>
+                            <a href="#" class="btn-edit"><i class="fa-solid fa-pen"></i></a>
+                            <a href="#" class="btn-del"><i class="fa-solid fa-trash"></i></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>#005</td>
+                        <td>Ethical Hacking & Sécurité Réseau</td>
+                        <td>M. Filali</td>
+                        <td>Cybersécurité</td>
+                        <td>Avancé</td>
+                        <td>64h</td>
+                        <td>
+                            <a href="#" class="btn-edit"><i class="fa-solid fa-pen"></i></a>
+                            <a href="#" class="btn-del"><i class="fa-solid fa-trash"></i></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>#006</td>
+                        <td>Node.js & API REST Avancées</td>
+                        <td>A. Alaoui</td>
+                        <td>Développement</td>
+                        <td>Avancé</td>
+                        <td>38h</td>
+                        <td>
+                            <a href="#" class="btn-edit"><i class="fa-solid fa-pen"></i></a>
+                            <a href="#" class="btn-del"><i class="fa-solid fa-trash"></i></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>#007</td>
+                        <td>SQL & NoSQL — Bases de données</td>
+                        <td>S. Benali</td>
+                        <td>Data Science</td>
+                        <td>Intermédiaire</td>
+                        <td>32h</td>
+                        <td>
+                            <a href="#" class="btn-edit"><i class="fa-solid fa-pen"></i></a>
+                            <a href="#" class="btn-del"><i class="fa-solid fa-trash"></i></a>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                </div>
             </div>
     </main>
     <script>
