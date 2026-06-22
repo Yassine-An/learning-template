@@ -16,30 +16,11 @@
     --email-password-field-border: #e8e7f5;
     --input-icon-color:#a9a9c8;
     --bon-retour-background: #eef2ff;
-    --bon-retour-color: #4f46e5;
     --security-msg-background: #eef2ff;
     --info-box-border:#e0e7ff;
-    --success-state:#10b981;
-    --success-icon-background:#ecfdf5;
-    --progress-bar-background:#e8e7f5;
-    --progress-bar-fill:#818cf8;
     --checkbox-border:#c7c6e4;
-    --otp-text-color:#4338ca;
-    --requirement-box-background:#eeeeff;
     --footer-text-color:#6b6b8a;
     
-
-    --nav-color: #1a2e4a;
-    --nav-dark: #0f1f33;
-    --nav-light: #243d5c;
-    --orange: #f97316;
-    --orange-light: #fff7ed;
-    --orange-hover: #ea6c0a;
-    --bg: #f0f2f5;
-    --text: #1e293b;
-    --text-little-dark: #64748b;
-    --text-light: #94a3b8;
-    --border: #e2e8f0;
 }
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -63,10 +44,10 @@ header {
 
 }
 #head-icon{
-    background-color:inherit;
+    background-color:#243d5c;
     margin-left: 20px;
     border: 1px solid transparent;
-    color: var(--otp-text-color);
+    color: var(--bon-retour-background);
     padding: 6px 8px;
     border-radius: 10px;
     font-size: 24px;
@@ -90,7 +71,7 @@ header {
     padding:40px 40px 15px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-    border-top: 3px solid var(--text-little-dark);
+    border-top: 3px solid  #243d5c;;
 }
 
 h1 {
@@ -188,10 +169,11 @@ input[type="checkbox"] {
     display: inline-block;
     border: 1px solid var(--checkbox-border);
     width: 20px;
+    accent-color: #243d5c;
 }
 input[type="checkbox"]:checked {
-  background-color: #4f46e5; 
-  border-color: #4f46e5;
+  background-color: #243d5c; 
+  border-color: #243d5c;
 }
 #connect {
     display: inline-block;
@@ -199,7 +181,7 @@ input[type="checkbox"]:checked {
     font-size: 14px;
 }
 button[type="submit"] {
-    background-color: var(--success-state);
+    background-color: #243d5c;
     color: var(--main-btn-text-color);
     border: none;
     padding: 10px;
@@ -260,7 +242,7 @@ footer {
    border: 1px solid var(--info-box-border);
    padding: 6px 10px;
    border-radius: 15px;
-   font-size: 15px;
+   font-size: 12px;
 }
 
 @media (width<=480px)
@@ -356,7 +338,7 @@ footer {
     }
     .fin{
     padding: 4px 6px;
-    font-size: 8px;
+    font-size: 7px;
     }
     
 }
