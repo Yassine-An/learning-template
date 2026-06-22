@@ -2,12 +2,13 @@ body
 {
     width:95%;
     font-size: 1rem !important;
+    background-color: #f0f2f5 !important;
 }
 h4{font-size:medium !important;}
 
 header
 {
-    
+    background-color: #fff !important;
     display:flex;
     width:100%;
     justify-content: space-around;
@@ -328,6 +329,7 @@ h2
 
 footer
 {
+    background-color: #fff !important;
     display:flex;
     width: 100%;
     justify-content: space-between;
