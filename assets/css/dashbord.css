@@ -22,7 +22,7 @@ body {
     min-height: 100vh !important; 
     font-size: 14px !important; 
 }
-.sidebar{
+aside{
     height: 100vh;
     position: fixed;
     width:220px;
@@ -32,17 +32,17 @@ body {
     top: 0;
     left: 0;
 }
-.sb-top{
+#top{
     padding: 20px 18px 16px; 
     border-bottom: 1px solid rgba(255,255,255,0.07); 
 }
-.sb-title{
+#sb-title{
     color:white;
     font-size: 22px;
     font-weight: 700;
     letter-spacing: -0.5px;
 }
-.sb-utitle{
+#sb-utitle{
     font-size: 11px;
     color: var(--text-little-dark);
 }
@@ -89,12 +89,12 @@ body {
     padding: 1px 7px;
     border-radius: 10px;
 }
-.sb-under{
+#sb-down{
     margin-top: auto;
     padding: 14px 14px 18px;
     border-top:1px solid var(--text-light) ;
 }
-.sb-avatar{
+#sb-avatar{
     width: 36px;
     height: 36px;
     border-radius: 50%;
@@ -108,14 +108,14 @@ body {
     color: white;
     margin-right: 10px;
 }
-.sb-user{
+#sb-user{
     display: flex;
     align-items: center;
 }
 .uname{
-   font-size: 13px;
-   color:white; 
-   font-weight: 600;
+   font-size: 13px !important;
+   color:white !important; 
+   font-weight: 600 !important;
 }
 .urole{
     font-size: 11px;
@@ -673,27 +673,27 @@ h3{
     {
         display: none !important;
     }
-    .sidebar
+    aside
     {
         width:18%;
         position:fixed !important;
         height: 100vh !important;
     }
-    .sb-title
+    #sb-title
     {
         font-size: 13px !important;
         text-align: center;
     }
-    .sb-utitle
+    #sb-utitle
     {
         font-size: 8px !important;
         text-align: center;
     }
-    .sb-top{
+    #top{
         width:fit-content;
         padding:5px; 
     }
-    .sb-under{
+    #sb-down{
         width:fit-content;
         padding: 5px;
         border-top:1px solid var(--text-light) ;
@@ -705,9 +705,6 @@ h3{
         margin: 10px auto;
 
         
-    }
-    main { 
-        width: 80%; 
     }
     .sb-section
     {
